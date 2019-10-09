@@ -1,0 +1,106 @@
+.footer {
+    img {
+        margin-bottom: 15px;
+    }
+    ul{
+        list-style: none;
+        text-transform: uppercase;
+        a {
+            padding:0 7px;
+            position: relative;
+            color: $black;
+            font-size: 14px;
+            letter-spacing: -0.12px;
+        }
+    }
+    &__career {
+        background: #ddd url("/assets/images/growing-team.jpg") no-repeat center;
+        background-size: cover;
+        text-align: center;
+        padding: 100px 0px;
+        min-height: 650px;
+        h2 {
+            margin-bottom: 80px;
+        }
+    }
+
+    &__top {
+        background-color: $primary;
+        text-align: center;
+        text-transform: capitalize;
+        @include flex_center;
+        min-height: 120px;
+        h2 {
+            color: $white;
+            margin-bottom: 0 !important;
+        }
+    }
+    &__bottom {
+        padding: 55px 0 80px;
+        &__about {
+            p {
+                line-height: normal;
+            }
+        }
+        &__socialinfo {
+            @extend %justify-content-center;
+            p {
+                margin-bottom: 0;
+            }
+        }
+        &__socialicons {
+            @extend .d-flex;
+            color: #000;
+            li {
+                &:first-child {
+                    a {
+                        padding-left: 0;
+                        
+                    }
+                }
+                a {
+                    font-size: 45px;
+                    padding: 0 16px;
+                }
+            }
+        }
+        &__links {
+            @extend .d-flex;
+            li {
+                &:first-child {
+                    a {
+                        padding-left: 0;
+                    }
+                }
+                &:last-child {
+                    a {
+                        &::after {
+                            content: none;
+                        }
+                    }
+                }
+            }
+            a {
+                &:after {
+                    content: "";
+                    position: absolute;
+                    width: 1px;
+                    height: calc(100% - 2px);
+                    background: #000;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 0;
+
+                }
+            }
+        }
+        &__digitext {
+            h2 {
+                font-family: $lato-regular;
+                color: #181517;
+                font-size: 37px;
+                letter-spacing: -0.37px;
+            }
+        }
+    }
+}

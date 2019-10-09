@@ -1,0 +1,46 @@
+.header{
+    position: relative;
+    background:$white;
+    border-bottom: 1px solid #f5f5f5;
+    padding: 15px 0;
+    min-height: 100px;
+    &__container {
+        max-width: 90%;
+        margin: 0 auto;
+        @include flex_center_between;
+    }
+    &__logo{
+        img{
+            width: 316px;
+        }
+    }
+    &__ex2-humburger{
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: 1px;
+        #humburgerTrigger {
+            width: 25px;
+            height: 14px;
+            display: inline-block;
+            position: relative;
+            display: none;
+        }
+        &__inner, &__inner:before, &__inner:after{
+            width: 25px;
+            height: 2px;
+            background-color: #8c98a4;
+            position: absolute;
+            content: "";
+            left: 0;
+        }
+        &__inner{
+            top:4px;
+            &:before{
+                top: 6px;
+            }
+            &:after{
+                top:12px;
+            }
+        }
+    }
+}

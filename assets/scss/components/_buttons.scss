@@ -1,0 +1,36 @@
+[type=button]:not(:disabled), 
+[type=reset]:not(:disabled), 
+[type=submit]:not(:disabled), 
+button:not(:disabled) {
+    cursor: pointer;
+}
+.btn {
+    @include flex(inline-flex);
+    @include flex_align_items(center);
+    font-family: $lato-regular;
+    font-size: 16px;
+    color: $black;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 1.2rem 3.5rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    text-transform: uppercase;
+    min-height: 80px;
+    &:focus {
+        outline: none;
+    }
+
+}
+.btn-primary {
+    @include button-variant ($white,$blue,$blue);
+}
+.btn-rounded {
+    border-radius:50px;
+}

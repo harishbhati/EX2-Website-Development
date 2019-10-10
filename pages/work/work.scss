@@ -1,3 +1,4 @@
+@import "./../../assets/scss/base/variables";
 .work{
     &__main-title{
         margin: 4rem 0 3rem;
@@ -16,7 +17,7 @@
         text-transform: uppercase;
         letter-spacing: .9px;
         font-size: .8rem;
-        // color: red;
+        color: $primary;
     }
     .row{
         margin-top: 2.5rem;
@@ -29,12 +30,12 @@
     padding: 150px 0 100px;
     margin: 4rem auto;
     &__banner{
-        color: #fff;
+        color: $white;
         &__button{
-            color: #fff;
+            color: $white;
             font-size: 1rem;
             display: inline-block;
-            background-color: red;
+            background-color: $blue;
             padding: 20px 40px;
             margin-top: 20px;
             border-radius: 50px;

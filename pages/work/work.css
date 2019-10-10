@@ -25,6 +25,7 @@
   text-transform: uppercase;
   letter-spacing: .9px;
   font-size: .8rem;
+  color: #1795d2;
 }
 
 .work .row {
@@ -47,7 +48,7 @@
   color: #fff;
   font-size: 1rem;
   display: inline-block;
-  background-color: red;
+  background-color: #1d5ca9;
   padding: 20px 40px;
   margin-top: 20px;
   border-radius: 50px;

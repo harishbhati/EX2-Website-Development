@@ -1,1 +1,47 @@
-/* No CSS *//*# sourceMappingURL=about.css.map */
+.about-desc p {
+  font-size: 0.9rem;
+}
+
+.about-desc .row {
+  margin-top: 80px;
+}
+
+.about-desc .col {
+  text-align: right;
+}
+
+.about-desc .col + .col {
+  text-align: left;
+}
+
+.about-exp p {
+  font-size: 0.9rem;
+}
+
+.about-exp .col {
+  margin-bottom: 50px;
+}
+
+.about-exp .offsetleft {
+  margin-left: 16.666667%;
+}
+
+.about-exp .offsetRight {
+  margin-right: 16.666667%;
+}
+
+.about-descbg {
+  position: relative;
+  padding-bottom: 35%;
+}
+
+.about-descbg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=about.css.map */

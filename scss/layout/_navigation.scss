@@ -3,6 +3,11 @@
         list-style: none;
         margin-bottom: 0;
         font-family: $lato-regular;
+        &__item:hover{
+            .nav-list__sub-list{
+                    display: flex;
+                }
+        }
         &__link{
            color: $black;    
            text-transform: uppercase;

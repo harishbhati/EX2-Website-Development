@@ -336,6 +336,12 @@ label {
   font-family: "Lato-Regular";
 }
 
+.nav-list__item:hover .nav-list__sub-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .nav-list__link {
   color: #000;
   text-transform: uppercase;

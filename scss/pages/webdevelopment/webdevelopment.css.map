@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,oBAAoB,CAAA;EAChB,UAAU,EAAE,IAAI,CAAC,yDAAyD,CAAC,SAAS,CAAC,MAAM;EAC3F,eAAe,EAAE,KAAK;EACtB,UAAU,EAAE,MAAM;EAClB,OAAO,EAAE,SAAS;EAClB,UAAU,EAAE,KAAK;CAIpB;;AATD,AAMI,oBANgB,CAMhB,EAAE,CAAA;EACE,KAAK,EAAE,IAAI;CACd",
+    "sources": [
+        "webdevelopment.scss"
+    ],
+    "names": [],
+    "file": "webdevelopment.css"
+}

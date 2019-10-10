@@ -1,0 +1,12 @@
+.development-worried {
+  background: #ddd url(../../../assets/images/webdevelopment/worried-bg.jpg) no-repeat center;
+  background-size: cover;
+  text-align: center;
+  padding: 140px 0px;
+  min-height: 300px;
+}
+
+.development-worried h2 {
+  color: #fff;
+}
+/*# sourceMappingURL=webdevelopment.css.map */

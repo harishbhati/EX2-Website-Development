@@ -22,9 +22,49 @@ img {
 .text-center {
     text-align: center;
 }
+.text-right{
+    text-align: right;
+}
+.bottom-align{
+    align-self:flex-end;
+}
 .spacer{
     padding-top: 4rem;
     padding-bottom: 4rem;
+}
+.hexagone{
+    margin: 3.8rem auto;
+    width: 250px;
+    height: 130px;
+    background-color: #27aae1;
+    border-color: #27aae1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:before{
+        content: " ";
+        width: 0; 
+        height: 0;
+        left:0;
+        top: -80px;  
+        border-bottom: 80px solid;
+        border-color: inherit;
+        border-left: 125px solid transparent;
+        border-right: 125px solid transparent;
+        position: absolute;
+    }
+    &:after{
+        content: "";
+        width: 0;
+        position: absolute;
+        left:0;
+        bottom: -80px;
+        border-top: 80px solid;
+        border-color: inherit;
+        border-left: 125px solid transparent;
+        border-right: 125px solid transparent;  
+    }
 }
 .center-content{
     @extend %justify-content-center;

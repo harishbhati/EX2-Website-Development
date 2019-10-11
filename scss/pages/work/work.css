@@ -16,7 +16,6 @@
 }
 
 .work__text__para {
-  font-size: 1rem;
   margin-bottom: .5rem;
 }
 
@@ -34,7 +33,7 @@
 }
 
 .work-with-us {
-  background-image: url(./../../assets/images/web-development.jpg);
+  background-image: url(/assets/images/web-development.jpg);
   background-size: cover;
   padding: 150px 0 100px;
   margin: 4rem auto;
@@ -46,7 +45,6 @@
 
 .work-with-us__banner__button {
   color: #fff;
-  font-size: 1rem;
   display: inline-block;
   background-color: #1d5ca9;
   padding: 20px 40px;

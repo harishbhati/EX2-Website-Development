@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,oBAAoB,CAAA;EAChB,UAAU,EAAE,IAAI,CAAC,yDAAyD,CAAC,SAAS,CAAC,MAAM;EAC3F,eAAe,EAAE,KAAK;EACtB,UAAU,EAAE,MAAM;EAClB,OAAO,EAAE,SAAS;EAClB,UAAU,EAAE,KAAK;CAIpB;;AATD,AAMI,oBANgB,CAMhB,EAAE,CAAA;EACE,KAAK,EAAE,IAAI;CACd",
+    "mappings": "AACA,AAAA,oBAAoB,CAAA;EAChB,UAAU,EAAE,IAAI,CAAC,yDAAyD,CAAC,SAAS,CAAC,MAAM;EAC3F,eAAe,EAAE,KAAK;EACtB,UAAU,EAAE,MAAM;EAClB,OAAO,EAAE,SAAS;EAClB,UAAU,EAAE,KAAK;CAIpB;;AATD,AAMI,oBANgB,CAMhB,EAAE,CAAA;EACE,KAAK,ECJL,IAAI;CDKP",
     "sources": [
-        "webdevelopment.scss"
+        "webdevelopment.scss",
+        "../../base/_variables.scss"
     ],
     "names": [],
     "file": "webdevelopment.css"

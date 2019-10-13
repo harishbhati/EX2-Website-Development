@@ -270,9 +270,61 @@ img {
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
+.bottom-align {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
 .spacer {
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+
+.hexagone {
+  margin: 3.8rem auto;
+  width: 250px;
+  height: 130px;
+  background-color: #27aae1;
+  border-color: #27aae1;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hexagone:before {
+  content: " ";
+  width: 0;
+  height: 0;
+  left: 0;
+  top: -80px;
+  border-bottom: 80px solid;
+  border-color: inherit;
+  border-left: 125px solid transparent;
+  border-right: 125px solid transparent;
+  position: absolute;
+}
+
+.hexagone:after {
+  content: "";
+  width: 0;
+  position: absolute;
+  left: 0;
+  bottom: -80px;
+  border-top: 80px solid;
+  border-color: inherit;
+  border-left: 125px solid transparent;
+  border-right: 125px solid transparent;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
@@ -295,6 +347,7 @@ img {
 
 .h4, h4 {
   font-size: 1rem;
+  color: #1d5ca9;
 }
 
 .h5, h5 {
@@ -320,6 +373,8 @@ a {
   color: #007bff;
   text-decoration: none;
   background-color: transparent;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
 label {
@@ -337,9 +392,10 @@ label {
 }
 
 .nav-list__item:hover .nav-list__sub-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  opacity: 1;
+  top: 75px;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
 .nav-list__link {
@@ -347,7 +403,7 @@ label {
   text-transform: uppercase;
   font-size: 18px;
   font-family: "Lato-Semibold";
-  padding: 0 20px;
+  padding: 18px 20px;
   letter-spacing: 0.45px;
   white-space: nowrap;
 }
@@ -366,8 +422,10 @@ label {
   background: #fff;
   z-index: 2;
   padding: 20px;
-  top: 75px;
-  display: none;
+  top: 100%;
+  opacity: 0;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
 .nav-list__sub-list:before {
@@ -582,6 +640,7 @@ label {
 
 .footer__bottom__about p {
   line-height: normal;
+  font-size: 14px;
 }
 
 .footer__bottom__socialinfo p {

@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEK,AAAD,wBAAa,CAAA;EACT,MAAM,EAAE,QAAQ;CACnB;;AACA,AAAD,kBAAO,CAAA;EACH,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,eAAe,EAAE,MAAM;CAI1B;;AAHI,AAAD,wBAAO,CAAA;EACH,aAAa,EAAE,KAAK;CACvB;;AAEJ,AAAD,kBAAO,CAAA;EACH,YAAY,EAAE,IAAI;CACrB;;AAdL,AAeI,YAfQ,CAeR,IAAI,CAAA;EACA,UAAU,EAAE,MAAM;EAClB,aAAa,EAAE,MAAM;CACxB",
+    "sources": [
+        "work-inner.scss",
+        "../../base/_variables.scss"
+    ],
+    "names": [],
+    "file": "work-inner.css"
+}

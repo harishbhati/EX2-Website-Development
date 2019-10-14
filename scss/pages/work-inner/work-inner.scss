@@ -1,0 +1,21 @@
+@import "./../../base/variables";
+.work__inner{
+    &__main-title{
+        margin: 0 0 2rem;
+    }
+    &__text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &__para{
+            margin-bottom: .5rem;
+        }
+    }
+    &__list{
+        padding-left: 30px;
+    }
+    .row{
+        margin-top: 2.5rem;
+        margin-bottom: 3.5rem;
+    }
+}

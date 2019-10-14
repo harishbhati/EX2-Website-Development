@@ -1,23 +1,4 @@
-html{
-    font-size: 20px;
-}
-body {
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    background-color: $white;
-    font-family: 'Roboto-Regular', sans-serif;
-    letter-spacing: 0.1px;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-img {
-    max-width: 100%;
-    height: auto;
-    vertical-align: middle;
-    border-style: none;
-}
+@import 'mixins';
 
 .text-center {
     text-align: center;
@@ -31,6 +12,25 @@ img {
 .spacer{
     padding-top: 4rem;
     padding-bottom: 4rem;
+}
+
+// flex helper class
+.d-flex {
+    @include flex(flex);
+    @include flex_wrap(wrap);
+}
+.align-items-center {
+    @include flex_align_items(center);
+}
+
+
+%justify-content-center {
+    @extend .d-flex;
+    @include flex_justify(center);
+}
+%justify-content-between {
+    @extend .d-flex;
+    @include flex_justify(space-between);
 }
 .hexagone{
     margin: 3.8rem auto;

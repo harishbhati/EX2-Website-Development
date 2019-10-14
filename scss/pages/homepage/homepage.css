@@ -1,4 +1,22 @@
-.d-flex, .home-slider__container {
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.bottom-align {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.spacer {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.d-flex, .center-content, .home-slider__container {
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
@@ -12,10 +30,53 @@
           align-items: center;
 }
 
-.home-slider__container {
+.center-content, .home-slider__container {
   -ms-flex-pack: center;
   -webkit-box-pack: center;
           justify-content: center;
+}
+
+.hexagone {
+  margin: 3.8rem auto;
+  width: 250px;
+  height: 130px;
+  background-color: #27aae1;
+  border-color: #27aae1;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hexagone:before {
+  content: " ";
+  width: 0;
+  height: 0;
+  left: 0;
+  top: -80px;
+  border-bottom: 80px solid;
+  border-color: inherit;
+  border-left: 125px solid transparent;
+  border-right: 125px solid transparent;
+  position: absolute;
+}
+
+.hexagone:after {
+  content: "";
+  width: 0;
+  position: absolute;
+  left: 0;
+  bottom: -80px;
+  border-top: 80px solid;
+  border-color: inherit;
+  border-left: 125px solid transparent;
+  border-right: 125px solid transparent;
 }
 
 .home-slider__container {
@@ -197,4 +258,4 @@
 .home-needus__imgblk {
   text-align: right;
 }
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=homepage.css.map */

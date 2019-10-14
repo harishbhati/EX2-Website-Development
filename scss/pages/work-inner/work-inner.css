@@ -20,7 +20,22 @@
 }
 
 .work__inner__list {
-  padding-left: 30px;
+  padding-left: 2rem;
+  counter-reset: list__item 0;
+}
+
+.work__inner__list__item {
+  margin-bottom: .5rem;
+  position: relative;
+}
+
+.work__inner__list__item:before {
+  content: "0" counter(list__item) "";
+  counter-increment: list__item;
+  position: absolute;
+  left: -2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
 .work__inner .row {

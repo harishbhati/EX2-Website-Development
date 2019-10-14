@@ -2,6 +2,7 @@
 .work{
     &__main-title{
         margin: 0 0 2rem;
+        letter-spacing: -1.5px;
     }
     &__text{
         display: flex;
@@ -14,17 +15,21 @@
     &__link{
         text-decoration: underline;
         text-transform: uppercase;
-        letter-spacing: .9px;
-        font-size: .8rem;
-        color: $primary;
+        letter-spacing: 3.3px;
+        font-size: .7rem;
+        color: $black;
+        font-weight: 700;
+        &:hover{
+            color: $primary;
+        }
     }
     .row{
         margin-top: 2.5rem;
-        margin-bottom: 1.5rem;
+        margin-bottom: 2.5rem;
     }
 }
 .work-with-us {
-    background-image: url(/assets/images/web-development.jpg);
+    background-image: url(/assets/images/work/work-wwu.png);
     background-size: cover; 
     padding: 150px 0 100px;
     margin: 4rem auto;

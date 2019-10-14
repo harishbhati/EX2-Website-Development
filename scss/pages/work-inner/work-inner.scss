@@ -1,7 +1,7 @@
-@import "./../../assets/scss/base/variables";
+@import "./../../base/variables";
 .work__inner{
     &__main-title{
-        margin: 4rem 0 3rem;
+        margin: 0 0 2rem;
     }
     &__text{
         display: flex;
@@ -11,36 +11,11 @@
             margin-bottom: .5rem;
         }
     }
-    &__link{
-        text-decoration: underline;
-        text-transform: uppercase;
-        letter-spacing: .9px;
-        font-size: .8rem;
-        color: $primary;
+    &__list{
+        padding-left: 30px;
     }
     .row{
         margin-top: 2.5rem;
-        margin-bottom: 1.5rem;
-    }
-}
-.work__inner-with-us {
-    background-image: url(./../../assets/images/web-development.jpg);
-    background-size: cover; 
-    padding: 150px 0 100px;
-    margin: 4rem auto;
-    &__banner{
-        color: $white;
-        &__button{
-            color: $white;
-            display: inline-block;
-            background-color: $blue;
-            padding: 20px 40px;
-            margin-top: 20px;
-            border-radius: 50px;
-            max-width: 250px;
-        }
-    }
-    &__title{
-        padding: 0 30%;
+        margin-bottom: 3.5rem;
     }
 }

@@ -1,5 +1,5 @@
 .work__inner__main-title {
-  margin: 4rem 0 3rem;
+  margin: 0 0 2rem;
 }
 
 .work__inner__text {
@@ -16,46 +16,15 @@
 }
 
 .work__inner__text__para {
-  font-size: 1rem;
   margin-bottom: .5rem;
 }
 
-.work__inner__link {
-  text-decoration: underline;
-  text-transform: uppercase;
-  letter-spacing: .9px;
-  font-size: .8rem;
-  color: #1795d2;
+.work__inner__list {
+  padding-left: 30px;
 }
 
 .work__inner .row {
   margin-top: 2.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.work__inner-with-us {
-  background-image: url(./../../assets/images/web-development.jpg);
-  background-size: cover;
-  padding: 150px 0 100px;
-  margin: 4rem auto;
-}
-
-.work__inner-with-us__banner {
-  color: #fff;
-}
-
-.work__inner-with-us__banner__button {
-  color: #fff;
-  font-size: 1rem;
-  display: inline-block;
-  background-color: #1d5ca9;
-  padding: 20px 40px;
-  margin-top: 20px;
-  border-radius: 50px;
-  max-width: 250px;
-}
-
-.work__inner-with-us__title {
-  padding: 0 30%;
+  margin-bottom: 3.5rem;
 }
 /*# sourceMappingURL=work-inner.css.map */

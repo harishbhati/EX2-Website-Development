@@ -172,24 +172,18 @@
     @include flex_align_items(center);
     @include flex_justify(space-between);
 }
-//flex mixins    
-
-// flex helper class
-.d-flex {
-    @include flex(flex);
-    @include flex_wrap(wrap);
+//media query
+@mixin for-size($size) {
+    @if $size == phone-only {
+        @media (min-width: 320px) { @content; }
+    } 
+    @else if $size == phone-landscape-up {
+        @media (min-width: 480px) { @content; }
+    } 
+    @else if $size == tablet {
+        @media (min-width: 768px) { @content; }
+    } 
+    @else if $size == desktop-up {
+        @media (min-width: 1025px) { @content; }
+    } 
 }
-.align-items-center {
-    @include flex_align_items(center);
-}
-
-
-%justify-content-center {
-    @extend .d-flex;
-    @include flex_justify(center);
-}
-%justify-content-between {
-    @extend .d-flex;
-    @include flex_justify(space-between);
-}
-//helper

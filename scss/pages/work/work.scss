@@ -1,18 +1,36 @@
 @import "../../base/variables";
-// #primary-menu {
-//     display: none;
-// }
+@import "./../../base/mixins";
+#primary-menu {
+    display: none;
+}
 .work{
+    @include max-width-for(phone){
+        text-align: center;
+    }
     &__main-title{
         margin: 0 0 2rem;
         letter-spacing: -1.5px;
     }
+    h2{
+        @include max-width-for(phone){
+            padding-top: 1rem;
+        }
+    }
     &__text{
         display: flex;
+        @include flex(flex);
+        @include flex_justify(center);
         flex-direction: column;
-        justify-content: center;
+        @include max-width-for(phone){
+            order: 2;
+        }
         &__para{
             margin-bottom: .5rem;
+        }
+    }
+    &__image{
+        @include max-width-for(phone){
+            order: 1;
         }
     }
     &__link{
@@ -29,6 +47,10 @@
     .row{
         margin-top: 2.5rem;
         margin-bottom: 2.5rem;
+        @include for-size(phone-only){
+            @include flex(flex);
+            flex-wrap: wrap;
+        }
     }
 }
 .work-with-us {

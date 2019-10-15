@@ -1,23 +1,56 @@
+#primary-menu {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .work {
+    text-align: center;
+  }
+}
+
 .work__main-title {
   margin: 0 0 2rem;
   letter-spacing: -1.5px;
 }
 
+@media (max-width: 767px) {
+  .work h2 {
+    padding-top: 1rem;
+  }
+}
+
 .work__text {
   display: -webkit-box;
+  display: flex;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .work__text {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
 }
 
 .work__text__para {
   margin-bottom: .5rem;
+}
+
+@media (max-width: 767px) {
+  .work__image {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
 }
 
 .work__link {
@@ -38,10 +71,21 @@
   margin-bottom: 2.5rem;
 }
 
+@media (min-width: 320px) {
+  .work .row {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .work-with-us {
   background-image: url(/assets/images/work/work-wwu.png);
   background-size: cover;
-  padding: 150px 0 100px;
+  padding-top: 150px;
+  padding-bottom: 100px;
   margin: 4rem auto;
 }
 

@@ -1,8 +1,8 @@
 @import "../../base/variables";
 @import "./../../base/mixins";
-#primary-menu {
-    display: none;
-}
+// #primary-menu {
+//     display: none;
+// }
 .work{
     @include max-width-for(phone){
         text-align: center;

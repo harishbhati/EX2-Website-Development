@@ -1,7 +1,3 @@
-#primary-menu {
-  display: none;
-}
-
 @media (max-width: 767px) {
   .work {
     text-align: center;

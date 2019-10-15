@@ -8,7 +8,7 @@
         margin: 0 0 2rem;
     }
     &__text{
-        @include flex(flex);
+        @include d-flex(flex);
         @include flex_justify(center);
         flex-direction: column;
         @include max-width-for(phone){
@@ -48,7 +48,7 @@
         margin-top: 2.5rem;
         margin-bottom: 3.5rem;
         @include max-width-for(phone){
-            @include flex(flex);
+            @include d-flex(flex);
             flex-wrap: wrap;
         }
     }

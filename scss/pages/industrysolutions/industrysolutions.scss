@@ -13,11 +13,23 @@
   }
   /* sitecore */
   .sitecore {
-    .sitecore_left {
-      width: 57%;
-    }
-    .sitecore_right {
-      width: 40%;
+    .sitecore_top {
+      display: grid;
+      grid-template-columns: 55% 42%;
+      grid-template-rows: auto auto;
+      grid-template-areas: 
+        "a b"
+        "c b";
+        .item1 {
+          grid-area: a;
+          margin-bottom: 29px;
+        }
+        .item2 {
+          grid-area: b;
+        }
+        .item3 {
+          grid-area: c;
+        }
     }
     .sitecore_bottom {
       padding-top: 1.8rem;
@@ -55,9 +67,15 @@
       .squares_item {
         width: 200px;
         height: 200px;
-        padding: 40px 0 0 30px;
+        padding: 40px 0 40px 30px;
         text-align: left;
         color: #fff;
+        > div {
+            img{
+              height: 50px;
+              width:50px;
+            }
+        }
         &:nth-child(1) {
           background-color: #1b8ccc;
         }
@@ -83,8 +101,9 @@
           background-color: #0b79bc;
         }
         > h6 {
-          margin-top: 52px;
           max-width: 80%;
+          margin:0;
+          margin-top: auto;
         }
       }
     }
@@ -120,9 +139,53 @@
     margin-top: 54px;
     .hexagones {
       margin: 0 auto;
-      max-width: 480px;
+      max-width: 495px;
+      .inner-div {
+        margin: 0;
+        min-width: 205px;
+        color: #fff;
+      }
+      &:first-child {
+        .hexagone {
+          &:first-child {
+            background-color: #0674b9;
+          }
+          &:nth-child(2) {
+            background-color: #1c5ca8;
+          }
+        }
+      }
       &:nth-child(2) {
-        max-width: 727px;
+        max-width: 735px;
+        margin-top: -10px;
+        .hexagone {
+          &:first-child {
+            background-color: #0b79bc;
+          }
+          &:nth-child(2) {
+            background-color: #050708;
+            height: 175px;
+            width: calc(175px * 0.57735);
+            &:before,
+            &:after {
+              right: calc((100% / 2) - ((175px * 0.57735) / 2));
+            }
+          }
+          &:nth-child(3) {
+            background-color: #106db3;
+          }
+        }
+      }
+      &:nth-child(3) {
+        margin-top: -10px;
+        .hexagone {
+          &:first-child {
+            background-color: #1b8ccc;
+          }
+          &:nth-child(2) {
+            background-color: #1795d2;
+          }
+        }
       }
     }
   }

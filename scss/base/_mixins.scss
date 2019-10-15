@@ -24,7 +24,7 @@
 
 
 //flex mixins
-@mixin flex($properties) {
+@mixin d-flex($properties) {
     @if $properties == 'flex' {
         display: -ms-flexbox;
         display: -webkit-flex;
@@ -49,6 +49,17 @@
         -webkit-flex-wrap: wrap-reverse;
         -ms-flex-wrap: wrap-reverse;
         flex-wrap: wrap-reverse;
+    }
+}
+@mixin flex_direction($properties) {
+    @if $properties == 'column' {
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    } @else if $properties == 'row' {
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
     }
 }
 
@@ -161,14 +172,19 @@
     flex-basis: $properties;
 }
 
+@mixin flex($properties) {
+    -webkit-flex: $properties;
+    flex: $properties;
+}
+
 @mixin flex_center {
-    @include flex(flex);
+    @include d-flex(flex);
     @include flex_align_items(center);
     @include flex_justify(center);
 }
 
 @mixin flex_center_between {
-    @include flex(flex);
+    @include d-flex(flex);
     @include flex_align_items(center);
     @include flex_justify(space-between);
 }
@@ -176,13 +192,29 @@
 
 // flex helper class
 .d-flex {
-    @include flex(flex);
+    @include d-flex(flex);
     @include flex_wrap(wrap);
+}
+.flex-column{
+    @include flex_direction(column);
+}
+.flex-row{
+    @include flex_direction(row);
 }
 .align-items-center {
     @include flex_align_items(center);
 }
 
+.flex-space-between{
+    @extend %justify-content-between;
+}
+
+.flex{
+    @include flex(1)
+}
+.flex-center{
+    @include flex_center
+}
 
 %justify-content-center {
     @extend .d-flex;
@@ -192,4 +224,38 @@
     @extend .d-flex;
     @include flex_justify(space-between);
 }
-//helper
+//hexagone
+.hexagone {
+    height: 230px;
+    width: calc(230px * 0.57735);
+    background: #27aae1;
+    position: relative;
+    margin: 0 auto;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    &:before,
+    &:after {
+      position: absolute;
+      top: 0;
+      right: calc((100% / 2) - ((230px * 0.57735) / 2));
+      background-color: inherit;
+      height: inherit;
+      width: inherit;
+      content: "";
+    }
+    &:before {
+      transform: rotateZ(-60deg);
+      -webkit-transform: rotateZ(-60deg);
+    }
+    &:after {
+      transform: rotateZ(60deg);
+      -webkit-transform: rotateZ(60deg);
+    }
+    .inner-div{
+        position: relative;
+        z-index: 1;
+        transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
+    }
+  }
+  

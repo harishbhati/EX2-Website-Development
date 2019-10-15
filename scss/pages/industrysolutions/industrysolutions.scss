@@ -1,0 +1,129 @@
+.industry {
+  /*circles*/
+  .circles {
+    max-width: 90%;
+    margin: 54px auto 0 auto;
+    .circles_item {
+      flex-direction: column;
+      .circle {
+        border-radius: 50%;
+        margin-bottom: 26px;
+      }
+    }
+  }
+  /* sitecore */
+  .sitecore {
+    .sitecore_left {
+      width: 57%;
+    }
+    .sitecore_right {
+      width: 40%;
+    }
+    .sitecore_bottom {
+      padding-top: 1.8rem;
+      .checked_icon {
+        width: 74px;
+        text-align: center;
+      }
+      > div {
+        padding-bottom: 1.8rem;
+      }
+    }
+  }
+  /*business*/
+  .business {
+    background: url("../../../assets/images/industrysolutions/layer-11@3x.png") center center;
+    background-size: cover;
+    background: grey;
+    color: #fff;
+    padding: 92px 0;
+    margin: 4em 0;
+    .circle {
+      width: 200px;
+      height: 200px;
+      background: #fff;
+    }
+  }
+  /*dynamics*/
+  .dynamics {
+    .sub_title {
+      margin-top: 36px;
+    }
+    .squares {
+      max-width: 800px;
+      margin: 0 auto;
+      .squares_item {
+        width: 200px;
+        height: 200px;
+        padding: 40px 0 0 30px;
+        text-align: left;
+        color: #fff;
+        &:nth-child(1) {
+          background-color: #1b8ccc;
+        }
+        &:nth-child(2) {
+          background-color: #0b79bc;
+        }
+        &:nth-child(3) {
+          background-color: #0674b9;
+        }
+        &:nth-child(4) {
+          background-color: #1b8ccc;
+        }
+        &:nth-child(5) {
+          background-color: #106db3;
+        }
+        &:nth-child(6) {
+          background-color: #1795d2;
+        }
+        &:nth-child(7) {
+          background-color: #1b8ccc;
+        }
+        &:nth-child(8) {
+          background-color: #0b79bc;
+        }
+        > h6 {
+          margin-top: 52px;
+          max-width: 80%;
+        }
+      }
+    }
+  }
+  /*business process*/
+  .business_process {
+    .business_process_left {
+      width: 58%;
+    }
+    .business_process_right {
+      width: 42%;
+    }
+  }
+  /*system*/
+  .system {
+    .circles {
+      margin-bottom: 2.2rem;
+      .circles_item {
+        max-width: 209px;
+        .circle {
+          width: 150px;
+          height: 150px;
+          background: #1b8ccc;
+        }
+      }
+    }
+    .para {
+      margin-top: 2.1rem;
+    }
+  }
+  /*sales or hexagones*/
+  .hexagones-container {
+    margin-top: 54px;
+    .hexagones {
+      margin: 0 auto;
+      max-width: 480px;
+      &:nth-child(2) {
+        max-width: 727px;
+      }
+    }
+  }
+}

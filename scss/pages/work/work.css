@@ -20,9 +20,8 @@
 }
 
 .work__text {
-  display: -webkit-box;
-  display: flex;
   display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
   -ms-flex-pack: center;
   -webkit-box-pack: center;
@@ -71,7 +70,7 @@
   margin-bottom: 2.5rem;
 }
 
-@media (min-width: 320px) {
+@media (max-width: 767px) {
   .work .row {
     display: -ms-flexbox;
     display: -webkit-box;

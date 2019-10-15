@@ -87,6 +87,10 @@
   -webkit-transform: rotate(-90deg);
 }
 
+section {
+  padding: 1rem 0;
+}
+
 @media (max-width: 767px) {
   .work {
     text-align: center;
@@ -170,7 +174,7 @@
   background-size: cover;
   padding-top: 150px;
   padding-bottom: 100px;
-  margin: 4rem auto;
+  margin: 3rem auto;
 }
 
 .work-with-us__banner {

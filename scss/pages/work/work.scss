@@ -3,6 +3,9 @@
 // #primary-menu {
 //     display: none;
 // }
+section{
+    padding: 1rem 0;
+}
 .work{
     @include max-width-for(phone){
         text-align: center;
@@ -57,7 +60,7 @@
     background-size: cover; 
     padding-top: 150px;
     padding-bottom: 100px;
-    margin: 4rem auto;
+    margin: 3rem auto;
     &__banner{
         color: $white;
         &__button{

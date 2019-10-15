@@ -1,5 +1,5 @@
 .nav-list{
-        @include flex(flex);
+        @include d-flex(flex);
         list-style: none;
         margin-bottom: 0;
         font-family: $lato-regular;

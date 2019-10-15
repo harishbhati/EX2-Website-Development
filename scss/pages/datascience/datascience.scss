@@ -29,8 +29,15 @@
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
+        .hexagone{
+            margin-top: 26px;
+            margin-bottom: 0;;
+        }
     }
     &__dis{
         padding-top: 20px;
     }
+}
+.hexagone{
+    margin-bottom: 38px;
 }

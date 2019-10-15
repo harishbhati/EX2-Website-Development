@@ -1,0 +1,156 @@
+.industry {
+  /*circles*/
+  /* sitecore */
+  /*business*/
+  /*dynamics*/
+  /*business process*/
+  /*system*/
+  /*sales or hexagones*/
+}
+
+.industry .circles {
+  max-width: 90%;
+  margin: 54px auto 0 auto;
+}
+
+.industry .circles .circles_item {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.industry .circles .circles_item .circle {
+  border-radius: 50%;
+  margin-bottom: 26px;
+}
+
+.industry .sitecore .sitecore_left {
+  width: 57%;
+}
+
+.industry .sitecore .sitecore_right {
+  width: 40%;
+}
+
+.industry .sitecore .sitecore_bottom {
+  padding-top: 1.8rem;
+}
+
+.industry .sitecore .sitecore_bottom .checked_icon {
+  width: 74px;
+  text-align: center;
+}
+
+.industry .sitecore .sitecore_bottom > div {
+  padding-bottom: 1.8rem;
+}
+
+.industry .business {
+  background: url("../../../assets/images/industrysolutions/layer-11@3x.png") center center;
+  background-size: cover;
+  background: grey;
+  color: #fff;
+  padding: 92px 0;
+  margin: 4em 0;
+}
+
+.industry .business .circle {
+  width: 200px;
+  height: 200px;
+  background: #fff;
+}
+
+.industry .dynamics .sub_title {
+  margin-top: 36px;
+}
+
+.industry .dynamics .squares {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.industry .dynamics .squares .squares_item {
+  width: 200px;
+  height: 200px;
+  padding: 40px 0 0 30px;
+  text-align: left;
+  color: #fff;
+}
+
+.industry .dynamics .squares .squares_item:nth-child(1) {
+  background-color: #1b8ccc;
+}
+
+.industry .dynamics .squares .squares_item:nth-child(2) {
+  background-color: #0b79bc;
+}
+
+.industry .dynamics .squares .squares_item:nth-child(3) {
+  background-color: #0674b9;
+}
+
+.industry .dynamics .squares .squares_item:nth-child(4) {
+  background-color: #1b8ccc;
+}
+
+.industry .dynamics .squares .squares_item:nth-child(5) {
+  background-color: #106db3;
+}
+
+.industry .dynamics .squares .squares_item:nth-child(6) {
+  background-color: #1795d2;
+}
+
+.industry .dynamics .squares .squares_item:nth-child(7) {
+  background-color: #1b8ccc;
+}
+
+.industry .dynamics .squares .squares_item:nth-child(8) {
+  background-color: #0b79bc;
+}
+
+.industry .dynamics .squares .squares_item > h6 {
+  margin-top: 52px;
+  max-width: 80%;
+}
+
+.industry .business_process .business_process_left {
+  width: 58%;
+}
+
+.industry .business_process .business_process_right {
+  width: 42%;
+}
+
+.industry .system .circles {
+  margin-bottom: 2.2rem;
+}
+
+.industry .system .circles .circles_item {
+  max-width: 209px;
+}
+
+.industry .system .circles .circles_item .circle {
+  width: 150px;
+  height: 150px;
+  background: #1b8ccc;
+}
+
+.industry .system .para {
+  margin-top: 2.1rem;
+}
+
+.industry .hexagones-container {
+  margin-top: 54px;
+}
+
+.industry .hexagones-container .hexagones {
+  margin: 0 auto;
+  max-width: 480px;
+}
+
+.industry .hexagones-container .hexagones:nth-child(2) {
+  max-width: 727px;
+}
+/*# sourceMappingURL=industrysolutions.css.map */

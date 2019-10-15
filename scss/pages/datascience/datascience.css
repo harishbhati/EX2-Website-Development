@@ -39,7 +39,16 @@
           align-items: center;
 }
 
+.what-next .bottom-align .hexagone {
+  margin-top: 26px;
+  margin-bottom: 0;
+}
+
 .what-next__dis {
   padding-top: 20px;
+}
+
+.hexagone {
+  margin-bottom: 38px;
 }
 /*# sourceMappingURL=datascience.css.map */

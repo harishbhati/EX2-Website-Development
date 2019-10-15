@@ -17,19 +17,19 @@
       display: grid;
       grid-template-columns: 55% 42%;
       grid-template-rows: auto auto;
-      grid-template-areas: 
+      grid-template-areas:
         "a b"
         "c b";
-        .item1 {
-          grid-area: a;
-          margin-bottom: 29px;
-        }
-        .item2 {
-          grid-area: b;
-        }
-        .item3 {
-          grid-area: c;
-        }
+      .item1 {
+        grid-area: a;
+        margin-bottom: 29px;
+      }
+      .item2 {
+        grid-area: b;
+      }
+      .item3 {
+        grid-area: c;
+      }
     }
     .sitecore_bottom {
       padding-top: 1.8rem;
@@ -50,10 +50,14 @@
     color: #fff;
     padding: 92px 0;
     margin: 4em 0;
-    .circle {
-      width: 200px;
-      height: 200px;
-      background: #fff;
+    .circles_item {
+      max-width: 33%;
+      min-width: 216px;
+      .circle {
+        width: 200px;
+        height: 200px;
+        background: #fff;
+      }
     }
   }
   /*dynamics*/
@@ -65,16 +69,17 @@
       max-width: 800px;
       margin: 0 auto;
       .squares_item {
-        width: 200px;
+        width: 100%;
         height: 200px;
         padding: 40px 0 40px 30px;
         text-align: left;
         color: #fff;
+        max-width: 25%;
         > div {
-            img{
-              height: 50px;
-              width:50px;
-            }
+          img {
+            height: 50px;
+            width: 50px;
+          }
         }
         &:nth-child(1) {
           background-color: #1b8ccc;
@@ -102,7 +107,7 @@
         }
         > h6 {
           max-width: 80%;
-          margin:0;
+          margin: 0;
           margin-top: auto;
         }
       }
@@ -122,7 +127,8 @@
     .circles {
       margin-bottom: 2.2rem;
       .circles_item {
-        max-width: 209px;
+        max-width: 25%;
+        min-width: 162px;
         .circle {
           width: 150px;
           height: 150px;
@@ -136,7 +142,7 @@
   }
   /*sales or hexagones*/
   .hexagones-container {
-    margin-top: 54px;
+    margin-top: 75px;
     .hexagones {
       margin: 0 auto;
       max-width: 495px;

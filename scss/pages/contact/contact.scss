@@ -1,0 +1,84 @@
+@import "../../base/variables";
+.contact-form {
+  p {
+    font-size: 20px;
+  }
+  .input-box {
+    position: relative;
+    width: 100%;
+    padding: 20px 50px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    &__label{
+      position: absolute;
+      height: 18px;
+      font-family: Lato;
+      font-size: 24px;
+      top: 30px;
+      left: 50px;
+      transition: .5s ease;
+    }
+    &__input-control{
+      position: relative;
+      width: 100%;
+      box-sizing: border-box;
+      background: transparent;
+      border: none;
+      border-bottom: 3px solid #ccc;
+      padding: 10px 5px 10px 0;
+      outline: none;
+      color: #000;
+       &:focus ~ .input-box__label, &:valid ~ .input-box__label {
+          top: 0;
+          font-size: 16px;
+          color:#16447d;
+       }
+    }
+  }
+  form{
+    padding-left: 10%;
+  }
+  .btn{
+    margin-left: 50px;
+  }
+}
+
+.contact-image{
+  background: url("../../../assets/images/contact/img.jpg") no-repeat;
+  min-height: 530px;
+  background-size: cover;
+  margin-bottom: 80px;
+}
+
+.contact-info{
+  &__title{
+    font-size: 20px;
+    font-family: $lato-regular;
+    font-weight: normal;
+  }
+  .loction-link__icon{
+      background: url("../../../assets/images/contact/map.png") no-repeat;
+      background-size: cover;
+      display: inline-block;
+      width: 132px;
+      height: 125px;
+      margin-right: 35px;
+      margin-top: 30px;
+  }
+  &__addr{
+    display: flex;
+    a{
+      color:#000 ;
+      font-size: 23px;
+      font-family:'lato';
+      text-transform: uppercase;
+      &:hover{
+        color: #1795d2;
+        text-decoration: underline;
+      }
+    }
+  }
+  address a {
+    color: #000;
+  }
+}

@@ -1,0 +1,39 @@
+
+@import 'mixins';
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.bottom-align {
+  align-self: flex-end;
+}
+.spacer {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+// flex helper class
+.d-flex {
+    @include flex(flex);
+    @include flex_wrap(wrap);
+}
+.align-items-center {
+    @include flex_align_items(center);
+}
+
+
+%justify-content-center {
+    @extend .d-flex;
+    @include flex_justify(center);
+}
+%justify-content-between {
+    @extend .d-flex;
+    @include flex_justify(space-between);
+}
+
+.center-content {
+  @extend %justify-content-center;
+}
+

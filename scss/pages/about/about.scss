@@ -1,0 +1,117 @@
+@import "../../base/variables";
+.about-desc {
+    h2 {
+        margin-bottom: 3rem;
+    }
+    p {
+        font-size: 0.9rem;
+    }
+    .row {
+        margin-top: 80px;
+    }
+    .col {
+        text-align: right;
+        &+.col {
+            text-align: left;
+        }
+    }
+}
+
+.about-exp {
+    p {
+        font-size: 0.9rem;
+    }
+    .col {
+        margin-bottom: 50px;
+    }
+    .offsetleft {
+        margin-left: 16.666667%;
+    }
+    .offsetRight {
+        margin-right: 16.666667%;
+    }
+    
+}
+.about-descbg {
+    position: relative;
+    padding-bottom: 35%;
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.about-team {
+    h2 {
+        margin-bottom: 3rem;
+    }
+    &__card {
+        margin-bottom: 50px;
+    }
+    &__cardpadding {
+        position: relative;
+        padding-bottom: 88%;
+    }
+    &__cardpadding img {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        object-fit: cover;
+        background-color: #dddd;
+    }
+    figcaption {
+        padding: 40px 15px;
+        h4 {
+            margin-bottom: 10px;
+            font-family: $lato-regular;
+        }
+        p {
+            font-size: 0.82rem;
+            font-family: $lato-light;
+        }
+    }
+}
+
+.about-rocksauce {
+    h2 {
+        margin-bottom: 3rem;
+    }
+    p {
+        font-size: 20px;
+    }
+
+}
+.about-homesite {
+    &__leftinfo {
+        margin-bottom: 2rem;
+    }
+    &__contact {
+        background: url(../../../assets/images/about-homesite.jpg) no-repeat center;
+        padding: 25px;
+        background-size: cover;
+        min-height: 795px;
+        display: flex;
+        align-items: flex-end;
+        h3,p {
+            color:#fff;
+            margin-bottom: 5px;
+        }
+        p {
+            font-family: $roboto-light;
+            line-height: normal;
+        }
+
+        .info {
+            margin-bottom: 50px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

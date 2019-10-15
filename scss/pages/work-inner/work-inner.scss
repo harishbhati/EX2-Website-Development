@@ -1,0 +1,55 @@
+@import "./../../base/variables";
+@import "../../base/mixins";
+// #primary-menu {
+//     display: none;
+// }
+.work__inner{
+    &__main-title{
+        margin: 0 0 2rem;
+    }
+    &__text{
+        @include d-flex(flex);
+        @include flex_justify(center);
+        flex-direction: column;
+        @include max-width-for(phone){
+            order: 2;
+        }
+        &__para{
+            margin-bottom: .5rem;
+        }
+    }
+    h2{
+        @include max-width-for(phone){
+            padding-top: 1rem;
+        }
+    }
+    &__image{
+        @include max-width-for(phone){
+            order: 1;
+        }
+    }
+    &__list{
+        padding-left: 2rem;
+        counter-reset: list__item 0; 
+        &__item{
+            margin-bottom: .5rem;  
+            position: relative;
+            &:before {              
+                content: "0"counter(list__item)""; 
+                counter-increment: list__item; 
+                position: absolute;
+                left: -1.9rem;
+                font-size: 1.2rem;
+                font-weight: 700;
+            }
+        }
+    }
+    .row{
+        margin-top: 2.5rem;
+        margin-bottom: 3.5rem;
+        @include max-width-for(phone){
+            @include d-flex(flex);
+            flex-wrap: wrap;
+        }
+    }
+}

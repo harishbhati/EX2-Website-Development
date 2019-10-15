@@ -3,16 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Ex2 India Solutions - Design . Build . Grow">
     <meta name="theme-color" content="#1d5ca9">
     <title>Ex2 India Solutions - Design . Build . Grow</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-        integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href=""/>
     <!-- Include All CSS here-->
     <link rel="stylesheet" type="text/css" href="./css/flexslider.css" />
     <link rel="stylesheet" type="text/css" href="./scss/main.css" />
     <link rel="stylesheet" type="text/css" href="./scss/pages/webdevelopment/webdevelopment.css" />
+    <link media="only screen and (min-device-width: 768px)" href="./scss/layout/grid-responsive.css" type="text/css" rel="stylesheet" />
     <!-- End Include All CSS -->
 
     <!-- Favicon Icon -->
@@ -48,13 +48,13 @@
                             <li class="nav-list__item">
                                 <a href="" class="nav-list__link">Mobile Application</a></li>
                             <li class="nav-list__item">
-                                <a href="" class="nav-list__link">Vitrual Experience</a></li>
+                                <a href="" class="nav-list__link">Virtual Experience</a></li>
                             <li class="nav-list__item">
-                                <a href="" class="nav-list__link">Data Science</a></li>
+                                <a href="./data-science.html" class="nav-list__link">Data Science</a></li>
                         </ul>
                     </li>
                     <li class="nav-list__item">
-                        <a href="" class="nav-list__link active">Industry Solutions</a></li>
+                        <a href="./industry-solutions.html" class="nav-list__link active">Industry Solutions</a></li>
                     <li class="nav-list__item">
                         <a href="" class="nav-list__link">Our Work</a></li>
                     <li class="nav-list__item">
@@ -76,15 +76,14 @@
             <h1>One stop for all your<br/> 
                 digital needs</h1>
                 <p>
-                    We are a one-stop-shop for all your digital & technical needs. 
-                    Whatever goals your business has, your technical approach 
-                    will speak louder than any words. We are a one-stop-shop for all your digital & technical needs. 
-                    Whatever goals your business has, your technical approach 
-                    will speak louder than any words. 
-                </p>
+                    Our web presence is your digital face to your customers that differentiates you from your competitors. 
+                    Hence, it’s important to get it right for your business. Specializing in development of web & mobile applications 
+                    for startups, SMEs & Large Enterprises,EX2 excels in designing, building & growing websites & app that are not only
+                     beautiful, but also easy to use & deliver great results.</p>
         </div>
-        <div class="development-slider">
-            <ul class="development-slider__slides">
+        <div class="flexslider">
+            <ul class="slides">
+                <li><img src="./assets/images/webdevelopment/responsive-design.jpg" alt="responsive-design"></li>
                 <li><img src="./assets/images/webdevelopment/responsive-design.jpg" alt="responsive-design"></li>
             </ul>
         </div>
@@ -107,32 +106,28 @@
 <!--Development solution (start)-->
 <section class="development-solution spacer">
     <div class="container">
-        <div class="d-flex">
-            <div class="development-solution__desc col">
+        <div class="row">
+            <div class="development-solution__desc col middle-align">
                 <h2>Exquisite/<br/> 
                     Finest Services</h2>
                     <p>
-                        We are a one-stop-shop for all your digital & technical needs. 
-                        Whatever goals your business has, your technical approach 
-                        will speak louder than any words. 
-                        
-                    </p>
+                        Passionate about what we do, our specialized UX/UI designers specialize in building innovative, delightful & user-centric
+                         digital experiences using an agile testing methodology. Ensuring excellent services, we are flexible to scale the team 
+                         as per your need.</p>
             </div>
-            <figure class="development-solution__image-container col">
-                <img src="./assets/images/webdevelopment/finest-services.jpg" alt="finest-services">
+            <figure class="development-solution__image-container col text-right">
+                <img src="./assets/images/webdevelopment/finest-services.png" alt="finest-services">
             </figure>
         </div>
-        <div class="d-flex">
+        <div class="row">
             <figure class="development-solution__image-container col">
                 <img src="./assets/images/webdevelopment/why-us.jpg" alt="why-us">
             </figure>
-            <div class="development-solution__desc col">
+            <div class="development-solution__desc col middle-align">
                 <h2>Why Us ?</h2>
                     <p>
-                        We are a one-stop-shop for all your digital & technical needs. 
-                        Whatever goals your business has, your technical approach 
-                        will speak louder than any words. 
-                        
+                        Envisioning ourselves as your partners than just being a service provider, we care about your business goals. 
+                        Following industry’s best practices & standards, we have expert level engineers involved in every process. 
                     </p>
             </div>
         </div>
@@ -199,11 +194,11 @@
     </div>
 </footer>
 <!--footer-->
-<script src="./js/jquery-3.4.1.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script src="./js/flexslider.min.js"></script>
 <script>
 $(window).load(function() {
-  $('.development-slider').flexslider({
+  $('.flexslider').flexslider({
     animation: "slide"
   });
 });

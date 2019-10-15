@@ -1,0 +1,236 @@
+.industry {
+  /*circles*/
+  /* sitecore */
+  /*business*/
+  /*dynamics*/
+  /*business process*/
+  /*system*/
+  /*sales or hexagones*/
+}
+
+.industry .circles {
+  max-width: 90%;
+  margin: 54px auto 0 auto;
+}
+
+.industry .circles .circles_item {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.industry .circles .circles_item .circle {
+  border-radius: 50%;
+  margin-bottom: 26px;
+}
+
+.industry .sitecore .sitecore_top {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 55% 42%;
+      grid-template-columns: 55% 42%;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+      grid-template-areas: "a b" "c b";
+}
+
+.industry .sitecore .sitecore_top .item1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: a;
+  margin-bottom: 29px;
+}
+
+.industry .sitecore .sitecore_top .item2 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: b;
+}
+
+.industry .sitecore .sitecore_top .item3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: c;
+}
+
+.industry .sitecore .sitecore_bottom {
+  padding-top: 1.8rem;
+}
+
+.industry .sitecore .sitecore_bottom .checked_icon {
+  width: 74px;
+  text-align: center;
+}
+
+.industry .sitecore .sitecore_bottom > div {
+  padding-bottom: 1.8rem;
+}
+
+.industry .business {
+  background: url("../../../assets/images/industrysolutions/layer-11@3x.png") center center;
+  background-size: cover;
+  background: grey;
+  color: #fff;
+  padding: 92px 0;
+  margin: 4em 0;
+}
+
+.industry .business .circles_item {
+  max-width: 33%;
+  min-width: 216px;
+}
+
+.industry .business .circles_item .circle {
+  width: 200px;
+  height: 200px;
+  background: #fff;
+}
+
+.industry .dynamics .sub_title {
+  margin-top: 36px;
+}
+
+.industry .dynamics .squares {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.industry .dynamics .squares .squares_item {
+  width: 100%;
+  height: 200px;
+  padding: 40px 0 40px 30px;
+  text-align: left;
+  color: #fff;
+  max-width: 25%;
+}
+
+.industry .dynamics .squares .squares_item > div img {
+  height: 50px;
+  width: 50px;
+}
+
+.industry .dynamics .squares .squares_item:nth-child(1) {
+  background-color: #1b8ccc;
+}
+
+.industry .dynamics .squares .squares_item:nth-child(2) {
+  background-color: #0b79bc;
+}
+
+.industry .dynamics .squares .squares_item:nth-child(3) {
+  background-color: #0674b9;
+}
+
+.industry .dynamics .squares .squares_item:nth-child(4) {
+  background-color: #1b8ccc;
+}
+
+.industry .dynamics .squares .squares_item:nth-child(5) {
+  background-color: #106db3;
+}
+
+.industry .dynamics .squares .squares_item:nth-child(6) {
+  background-color: #1795d2;
+}
+
+.industry .dynamics .squares .squares_item:nth-child(7) {
+  background-color: #1b8ccc;
+}
+
+.industry .dynamics .squares .squares_item:nth-child(8) {
+  background-color: #0b79bc;
+}
+
+.industry .dynamics .squares .squares_item > h6 {
+  max-width: 80%;
+  margin: 0;
+  margin-top: auto;
+}
+
+.industry .business_process .business_process_left {
+  width: 58%;
+}
+
+.industry .business_process .business_process_right {
+  width: 42%;
+}
+
+.industry .system .circles {
+  margin-bottom: 2.2rem;
+}
+
+.industry .system .circles .circles_item {
+  max-width: 25%;
+  min-width: 162px;
+}
+
+.industry .system .circles .circles_item .circle {
+  width: 150px;
+  height: 150px;
+  background: #1b8ccc;
+}
+
+.industry .system .para {
+  margin-top: 2.1rem;
+}
+
+.industry .hexagones-container {
+  margin-top: 75px;
+}
+
+.industry .hexagones-container .hexagones {
+  margin: 0 auto;
+  max-width: 495px;
+}
+
+.industry .hexagones-container .hexagones .inner-div {
+  margin: 0;
+  min-width: 205px;
+  color: #fff;
+}
+
+.industry .hexagones-container .hexagones:first-child .hexagone:first-child {
+  background-color: #0674b9;
+}
+
+.industry .hexagones-container .hexagones:first-child .hexagone:nth-child(2) {
+  background-color: #1c5ca8;
+}
+
+.industry .hexagones-container .hexagones:nth-child(2) {
+  max-width: 735px;
+  margin-top: -10px;
+}
+
+.industry .hexagones-container .hexagones:nth-child(2) .hexagone:first-child {
+  background-color: #0b79bc;
+}
+
+.industry .hexagones-container .hexagones:nth-child(2) .hexagone:nth-child(2) {
+  background-color: #050708;
+  height: 175px;
+  width: calc(175px * 0.57735);
+}
+
+.industry .hexagones-container .hexagones:nth-child(2) .hexagone:nth-child(2):before, .industry .hexagones-container .hexagones:nth-child(2) .hexagone:nth-child(2):after {
+  right: calc((100% / 2) - ((175px * 0.57735) / 2));
+}
+
+.industry .hexagones-container .hexagones:nth-child(2) .hexagone:nth-child(3) {
+  background-color: #106db3;
+}
+
+.industry .hexagones-container .hexagones:nth-child(3) {
+  margin-top: -10px;
+}
+
+.industry .hexagones-container .hexagones:nth-child(3) .hexagone:first-child {
+  background-color: #1b8ccc;
+}
+
+.industry .hexagones-container .hexagones:nth-child(3) .hexagone:nth-child(2) {
+  background-color: #1795d2;
+}
+/*# sourceMappingURL=industrysolutions.css.map */

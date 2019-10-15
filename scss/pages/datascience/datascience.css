@@ -1,0 +1,54 @@
+.data-science .data-science__text-left, .data-science .data-science__text-right {
+  background: url(../../../assets/images/datascience/dot-bg.png) no-repeat center;
+  background-size: auto;
+  background-position: top left;
+  padding-top: 2rem;
+  padding-left: 2rem;
+}
+
+.data-science .data-science__top {
+  background: url(../../../assets/images/datascience/data-bg.png) no-repeat center;
+  background-size: auto;
+  background-position: top right -11rem;
+}
+
+.data-science .data-science__middle {
+  background: url(../../../assets/images/datascience/process-bg.png) no-repeat center;
+  background-size: 36rem;
+  background-position: top left;
+}
+
+.data-science .h2 {
+  color: #1d5ca9;
+}
+
+.what-next h2 {
+  padding-bottom: 2rem;
+}
+
+.what-next .bottom-align {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.what-next .bottom-align .hexagone {
+  margin-top: 26px;
+  margin-bottom: 0;
+}
+
+.what-next__dis {
+  padding-top: 20px;
+}
+
+.hexagone {
+  margin-bottom: 38px;
+}
+/*# sourceMappingURL=datascience.css.map */

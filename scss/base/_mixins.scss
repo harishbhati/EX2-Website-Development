@@ -239,6 +239,9 @@
     @else if $size == desktop-up {
         @media (min-width: 1025px) { @content; }
     } 
+    @else if $size == phone-max {
+        @media (max-width: 767px) { @content; }
+    } 
 }
 
 //media query for Max-Width

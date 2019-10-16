@@ -13,7 +13,6 @@
 
 .contact-form .input-box__label {
   position: absolute;
-  height: 18px;
   font-family: Lato;
   font-size: 24px;
   top: 20px;
@@ -33,6 +32,7 @@
   padding: 10px 5px 10px 0;
   outline: none;
   color: #000;
+  z-index: 2;
 }
 
 .contact-form .input-box__input-control:focus ~ .input-box__label, .contact-form .input-box__input-control:valid ~ .input-box__label {
@@ -49,17 +49,8 @@
   margin-left: 50px;
 }
 
-.contact-image {
-  background: url("../../../assets/images/contact/img.jpg") no-repeat;
-  min-height: 530px;
-  background-size: cover;
-  margin-bottom: 80px;
-}
-
 .contact-info__title {
-  font-size: 20px;
   font-family: "Lato-Regular";
-  font-weight: normal;
 }
 
 .contact-info .loction-link__icon {
@@ -80,7 +71,6 @@
 
 .contact-info__addr a {
   color: #000;
-  font-size: 23px;
   font-family: 'lato';
   text-transform: uppercase;
 }
@@ -88,6 +78,12 @@
 .contact-info__addr a:hover {
   color: #1795d2;
   text-decoration: underline;
+}
+
+.contact-info address {
+  font-style: normal;
+  font-size: 1.3rem;
+  text-transform: uppercase;
 }
 
 .contact-info address a {

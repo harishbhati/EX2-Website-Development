@@ -1,0 +1,96 @@
+.contact-form p {
+  font-size: 20px;
+}
+
+.contact-form .input-box {
+  position: relative;
+  width: 100%;
+  padding: 20px 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.contact-form .input-box__label {
+  position: absolute;
+  height: 18px;
+  font-family: Lato;
+  font-size: 24px;
+  top: 20px;
+  left: 50px;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.contact-form .input-box__input-control {
+  position: relative;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid #ccc;
+  padding: 10px 5px 10px 0;
+  outline: none;
+  color: #000;
+}
+
+.contact-form .input-box__input-control:focus ~ .input-box__label, .contact-form .input-box__input-control:valid ~ .input-box__label {
+  top: 0;
+  font-size: 16px;
+  color: #16447d;
+}
+
+.contact-form form {
+  padding-left: 10%;
+}
+
+.contact-form .btn {
+  margin-left: 50px;
+}
+
+.contact-image {
+  background: url("../../../assets/images/contact/img.jpg") no-repeat;
+  min-height: 530px;
+  background-size: cover;
+  margin-bottom: 80px;
+}
+
+.contact-info__title {
+  font-size: 20px;
+  font-family: "Lato-Regular";
+  font-weight: normal;
+}
+
+.contact-info .loction-link__icon {
+  background: url("../../../assets/images/contact/map.png") no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 132px;
+  height: 125px;
+  margin-right: 35px;
+  margin-top: 30px;
+}
+
+.contact-info__addr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-info__addr a {
+  color: #000;
+  font-size: 23px;
+  font-family: 'lato';
+  text-transform: uppercase;
+}
+
+.contact-info__addr a:hover {
+  color: #1795d2;
+  text-decoration: underline;
+}
+
+.contact-info address a {
+  color: #000;
+}
+/*# sourceMappingURL=contact.css.map */

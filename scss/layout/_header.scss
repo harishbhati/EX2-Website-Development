@@ -1,3 +1,4 @@
+@import "./../base/mixins";
 .header{
     position: relative;
     background:$white;
@@ -12,18 +13,21 @@
     &__logo{
         img{
             width: 316px;
+            @include max-width-for(tablet){
+                max-width: 190px;
+            }
         }
     }
     &__ex2-humburger{
-        background-color: transparent;
-        border: 1px solid transparent;
-        border-radius: 1px;
         #humburgerTrigger {
             width: 25px;
             height: 14px;
             display: inline-block;
             position: relative;
             display: none;
+            @include max-width-for(phone){
+                display: block;
+            }
         }
         &__inner, &__inner:before, &__inner:after{
             width: 25px;
@@ -35,12 +39,61 @@
         }
         &__inner{
             top:4px;
+            transition: 300ms ease-in;
             &:before{
-                top: 6px;
+                top: 10px;
+                transition: 300ms ease-in;
             }
             &:after{
                 top:12px;
+                content: none;
             }
         }
     }
+}
+
+@include max-width-for(phone){
+
+    nav{
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 9;
+        .nav-list{
+            display: block;
+            margin-top: 80px;
+            position: absolute;
+            width: 100%;
+            height: calc(100% - 80px);
+            background: #fff;
+            padding-top: 30px;
+            &__item{
+                padding-top: 30px;
+            }
+        }
+    }
+    .nav-menu{
+        display: none;
+        &:checked ~ .header__container {
+            nav {
+                display: block;
+            }
+            .header__ex2-humburger{
+                position: relative;
+                z-index: 10;
+                &__inner {
+                    top: 4px;
+                    transform: rotate(45deg);
+                    &:before {
+                        top: 0;
+                        transform: rotate(-90deg);
+                    }
+                }
+            }
+        }
+    } 
+    
 }

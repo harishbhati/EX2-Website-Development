@@ -44,7 +44,7 @@
             }
         }
         &__socialinfo {
-            @extend %justify-content-center;
+            @extend .center-content;
             p {
                 margin-bottom: 0;
             }

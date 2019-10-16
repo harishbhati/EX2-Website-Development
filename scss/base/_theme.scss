@@ -1,11 +1,11 @@
 @import 'mixins';
 
 html {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
-    @include for-size(phone-max){
+    @include max-width-for(phone){
         font-size: 15px; 
     }
 }
@@ -36,27 +36,48 @@ body {
     padding-top: 4rem;
     padding-bottom: 4rem;
 }
-
+.block {
+    display: block;
+}
+.flex-important{
+    display: flex !important;
+    flex-wrap: wrap !important;
+}
 // flex helper class
 .d-flex {
-    @include flex(flex);
-    @include flex_wrap(wrap);
+    display: flex;
+    flex-wrap: wrap;
 }
 .align-items-center {
-    @include flex_align_items(center);
+    align-items: center;
 }
 
+.flex-column{
+    flex-direction: column;
+}
+.flex-row{
+    flex-direction: row;
+}
+.center-content {
+    justify-content: center;
+}
+.flex-space-between{
+    justify-content: space-between;
+}
 
-%justify-content-center {
+.flex{
+   flex: 1;
+}
+.flex-center{
+    @include flex_center
+}
+.justify-content-center {
     @extend .d-flex;
     @include flex_justify(center);
 }
-%justify-content-between {
+.justify-content-between {
     @extend .d-flex;
     @include flex_justify(space-between);
 }
 
-.center-content {
-  @extend %justify-content-center;
-}
 

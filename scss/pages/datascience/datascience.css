@@ -22,6 +22,43 @@
   color: #1d5ca9;
 }
 
+.hexagone {
+  height: 230px;
+  width: calc(230px * 0.57735);
+  background: #27aae1;
+  position: relative;
+  margin: 0 auto;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+}
+
+.hexagone:before, .hexagone:after {
+  position: absolute;
+  top: 0;
+  right: calc((100% / 2) - ((230px * 0.57735) / 2));
+  background-color: inherit;
+  height: inherit;
+  width: inherit;
+  content: "";
+}
+
+.hexagone:before {
+  transform: rotateZ(-60deg);
+  -webkit-transform: rotateZ(-60deg);
+}
+
+.hexagone:after {
+  transform: rotateZ(60deg);
+  -webkit-transform: rotateZ(60deg);
+}
+
+.hexagone .inner-div {
+  position: relative;
+  z-index: 1;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+}
+
 .what-next h2 {
   padding-bottom: 2rem;
 }

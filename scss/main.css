@@ -127,6 +127,351 @@ button::-moz-focus-inner {
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'icomoon';
+  src: url("../../assets/fonts/icomoon.woff") format("woff");
+  font-display: swap;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-data-extraction .path1:before {
+  content: "\e900";
+  color: #1c5ca8;
+  opacity: 0.4;
+}
+
+.icon-data-extraction .path2:before {
+  content: "\e901";
+  margin-left: -0.81640625em;
+  color: #1795d2;
+}
+
+.icon-data-extraction .path3:before {
+  content: "\e902";
+  margin-left: -0.81640625em;
+  color: white;
+}
+
+.icon-machine-learning .path1:before {
+  content: "\e903";
+  color: #1c5ca8;
+  opacity: 0.4;
+}
+
+.icon-machine-learning .path2:before {
+  content: "\e904";
+  margin-left: -0.8193359375em;
+  color: #1795d2;
+}
+
+.icon-machine-learning .path3:before {
+  content: "\e905";
+  margin-left: -0.8193359375em;
+  color: white;
+}
+
+.icon-machine-learning .path4:before {
+  content: "\e906";
+  margin-left: -0.8193359375em;
+  color: white;
+}
+
+.icon-machine-learning .path5:before {
+  content: "\e907";
+  margin-left: -0.8193359375em;
+  color: white;
+}
+
+.icon-machine-learning .path6:before {
+  content: "\e908";
+  margin-left: -0.8193359375em;
+  color: white;
+}
+
+.icon-artificial-intelligence .path1:before {
+  content: "\e909";
+  color: #1c5ca8;
+  opacity: 0.4;
+}
+
+.icon-artificial-intelligence .path2:before {
+  content: "\e90a";
+  margin-left: -0.81640625em;
+  color: #1795d2;
+}
+
+.icon-artificial-intelligence .path3:before {
+  content: "\e90b";
+  margin-left: -0.81640625em;
+  color: white;
+}
+
+.icon-heart-icon .path1:before {
+  content: "\e90c";
+  color: white;
+}
+
+.icon-heart-icon .path2:before {
+  content: "\e90d";
+  margin-left: -1em;
+  color: #0674b9;
+}
+
+.icon-cloud-teaching .path1:before {
+  content: "\e90e";
+  color: white;
+}
+
+.icon-cloud-teaching .path2:before {
+  content: "\e90f";
+  margin-left: -1em;
+  color: #0674b9;
+}
+
+.icon-cloud-teaching .path3:before {
+  content: "\e910";
+  margin-left: -1em;
+  color: #0674b9;
+}
+
+.icon-cloud-teaching .path4:before {
+  content: "\e911";
+  margin-left: -1em;
+  color: #0674b9;
+}
+
+.icon-cloud-teaching .path5:before {
+  content: "\e912";
+  margin-left: -1em;
+  color: #0674b9;
+}
+
+.icon-cloud-teaching .path6:before {
+  content: "\e913";
+  margin-left: -1em;
+  color: #0674b9;
+}
+
+.icon-cloud-teaching .path7:before {
+  content: "\e914";
+  margin-left: -1em;
+  color: #0674b9;
+}
+
+.icon-cloud-teaching .path8:before {
+  content: "\e915";
+  margin-left: -1em;
+  color: #0674b9;
+}
+
+.icon-target .path1:before {
+  content: "\e916";
+  color: white;
+}
+
+.icon-target .path2:before {
+  content: "\e917";
+  margin-left: -1em;
+  color: #0674b9;
+}
+
+.icon-target .path3:before {
+  content: "\e918";
+  margin-left: -1em;
+  color: #0674b9;
+}
+
+.icon-sales:before {
+  content: "\e919";
+  color: #fff;
+}
+
+.icon-marketing:before {
+  content: "\e91a";
+  color: #fff;
+}
+
+.icon-customer-service:before {
+  content: "\e91b";
+  color: #fff;
+}
+
+.icon-operations:before {
+  content: "\e91c";
+  color: #fff;
+}
+
+.icon-customer-insight:before {
+  content: "\e91d";
+  color: #fff;
+}
+
+.icon-financials:before {
+  content: "\e91e";
+  color: #fff;
+}
+
+.icon-project-automation:before {
+  content: "\e91f";
+  color: #fff;
+}
+
+.icon-field-service:before {
+  content: "\e920";
+  color: #fff;
+}
+
+.icon-consulting-needs-assessment .path1:before {
+  content: "\e921";
+  color: #1b8ccc;
+}
+
+.icon-consulting-needs-assessment .path2:before {
+  content: "\e922";
+  margin-left: -1em;
+  color: white;
+}
+
+.icon-CRM-system-implementations .path1:before {
+  content: "\e923";
+  color: #1b8ccc;
+}
+
+.icon-CRM-system-implementations .path2:before {
+  content: "\e924";
+  margin-left: -1em;
+  color: white;
+}
+
+.icon-system-data-integrations .path1:before {
+  content: "\e925";
+  color: #1b8ccc;
+}
+
+.icon-system-data-integrations .path2:before {
+  content: "\e926";
+  margin-left: -1em;
+  color: white;
+}
+
+.icon-system-data-integrations .path3:before {
+  content: "\e927";
+  margin-left: -1em;
+  color: white;
+}
+
+.icon-system-data-integrations .path4:before {
+  content: "\e928";
+  margin-left: -1em;
+  color: white;
+}
+
+.icon-system-data-integrations .path5:before {
+  content: "\e929";
+  margin-left: -1em;
+  color: white;
+}
+
+.icon-CRM-system-migrations .path1:before {
+  content: "\e92a";
+  color: #1b8ccc;
+}
+
+.icon-CRM-system-migrations .path2:before {
+  content: "\e92b";
+  margin-left: -1em;
+  color: white;
+}
+
+.icon-CRM-system-migrations .path3:before {
+  content: "\e92c";
+  margin-left: -1em;
+  color: white;
+}
+
+.icon-CRM-system-migrations .path4:before {
+  content: "\e92d";
+  margin-left: -1em;
+  color: white;
+}
+
+.icon-CRM-system-migrations .path5:before {
+  content: "\e92e";
+  margin-left: -1em;
+  color: white;
+}
+
+.icon-CRM-system-migrations .path6:before {
+  content: "\e92f";
+  margin-left: -1em;
+  color: white;
+}
+
+.icon-CRM-system-migrations .path7:before {
+  content: "\e930";
+  margin-left: -1em;
+  color: white;
+}
+
+.icon-CRM-system-migrations .path8:before {
+  content: "\e931";
+  margin-left: -1em;
+  color: white;
+}
+
+.icon-customer-experience:before {
+  content: "\e932";
+}
+
+.icon-customer-engagement:before {
+  content: "\e933";
+}
+
+.icon-business-intelligence:before {
+  content: "\e934";
+}
+
+.icon-business-scaling:before {
+  content: "\e935";
+}
+
+.icon-innovative-business-growth:before {
+  content: "\e936";
+}
+
+.icon-creative-technical-excellence:before {
+  content: "\e937";
+}
+
+.icon-highly-functional:before {
+  content: "\e938";
+}
+
+.icon-hand-select:before {
+  content: "\e939";
+}
+
+.icon-pencil-pc:before {
+  content: "\e93a";
+}
+
+.icon-sync-devices:before {
+  content: "\e93b";
+}
+
 html {
   font-size: 18px;
   line-height: 1.15;

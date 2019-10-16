@@ -11,7 +11,6 @@
     margin-bottom: 20px;
     &__label{
       position: absolute;
-      height: 18px;
       font-family: Lato;
       font-size: 24px;
       top: 20px;
@@ -28,6 +27,7 @@
       padding: 10px 5px 10px 0;
       outline: none;
       color: #000;
+      z-index: 2;
        &:focus ~ .input-box__label, &:valid ~ .input-box__label {
           top: 0;
           font-size: 16px;
@@ -43,18 +43,9 @@
   }
 }
 
-.contact-image{
-  background: url("../../../assets/images/contact/img.jpg") no-repeat;
-  min-height: 530px;
-  background-size: cover;
-  margin-bottom: 80px;
-}
-
 .contact-info{
   &__title{
-    font-size: 20px;
     font-family: $lato-regular;
-    font-weight: normal;
   }
   .loction-link__icon{
       background: url("../../../assets/images/contact/map.png") no-repeat;
@@ -69,7 +60,6 @@
     display: flex;
     a{
       color:#000 ;
-      font-size: 23px;
       font-family:'lato';
       text-transform: uppercase;
       &:hover{
@@ -78,7 +68,12 @@
       }
     }
   }
-  address a {
-    color: #000;
+  address{
+    font-style: normal;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+      a {
+      color: #000;
+    }
   }
 }

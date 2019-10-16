@@ -7,8 +7,6 @@
     <meta name="description" content="Ex2 India Solutions - Design . Build . Grow">
     <meta name="theme-color" content="#1d5ca9">
     <title>Ex2 India Solutions - Design . Build . Grow</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-        integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
     <!-- Include All CSS here-->
     <link rel="stylesheet" type="text/css" href="./css/flexslider.css" />
     <link rel="stylesheet" type="text/css" href="./scss/main.css" />
@@ -59,12 +57,12 @@
     </header>
     <!--header (END)-->
 
-    <!---Contact Us--->
-    <section class="spacer  contact-form">
+    <!---Contact Us-->
+    <section class="contact-form spacer">
         <div class="container">
             <div class="row">
                 <div class="col-5">
-                    <h2> Looking for a project quote, or have a question for us? </h2>
+                    <h2>Looking for a project quote, or have a question for us?</h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec pharetra magna, sit amet
                         dictum sem. Ut impe rdiet
@@ -77,25 +75,25 @@
                         felis vitae pulvinar mattis.</p>
                 </div>
                 <div class="col-7">
-                    <form action="">
+                    <form>
                         <div class="input-box">
                             <input type="text" class="input-box__input-control" required>
-                            <label for="name" class="input-box__label">NAME</label>
+                            <label class="input-box__label">NAME</label>
                         </div>
 
                         <div class="input-box">
                             <input type="text" class="input-box__input-control" required>
-                            <label for="name" class="input-box__label">EMAIL</label>
+                            <label class="input-box__label">EMAIL</label>
                         </div>
 
                         <div class="input-box">
                             <input type="text" class="input-box__input-control" required>
-                            <label for="name" class="input-box__label">PHONE</label>
+                            <label class="input-box__label">PHONE</label>
                         </div>
 
                         <div class="input-box">
                             <Textarea class="input-box__input-control" required></Textarea>
-                            <label for="MESSAGE" class="input-box__label">MESSAGE</label>
+                            <label class="input-box__label">MESSAGE</label>
                         </div>
                         <button class="btn btn-primary btn-rounded">Submit</button>
                     </form>
@@ -105,10 +103,12 @@
     </section>
 
     <div class="container">
-        <div class="contact-image"></div>
+        <figure class="contact-image">
+            <img src="../../../assets/images/contact/contact-bg.jpg" alt="Contact Banner" />
+        </figure>
     </div>
 
-    <section class="contact-info">
+    <section class="contact-info spacer">
         <div class="container">
             <div class="row">
                 <div class="col-6">
@@ -116,23 +116,25 @@
                         <div>
                             <i class="loction-link__icon"></i>
                         </div>
-                        <address style="font-style: normal;">
-                            <h5 class="contact-info__title">Location</h5>
-                            <p><a href=""> Austin, TX</a> / <a href=""> Los Angeles, CA
-                                    Denver, CO </a> / <a href=""> San Jose, Costa Rica</a> /
-                                <a href="">New Delhi, India</a></p>
-                        </address>
+                        <div class="address-location">
+                            <h5>Location</h5>
+                            <address>
+                                <p><a href=""> Austin, TX</a> / <a href=""> Los Angeles, CA Denver, CO </a> / <a href=""> San Jose, Costa Rica</a> /
+                                    <a href="">New Delhi, India</a>
+                                </p>
+                            </address>
+                        </div>
                     </div>
                 </div>
                 <div class="col-3">
-                    <h5 class="contact-info__title">Email</h5>
-                    <address style="font-style: normal;">
+                    <h5>Email</h5>
+                    <address>
                         <a href="mailto:info@exsquared.com">info@exsquared.com</a>
                     </address>
                 </div>
                 <div class="col-3">
-                    <h5 class="contact-info__title">Phone</h5>
-                    <address style="font-style: normal;">
+                    <h5>Phone</h5>
+                    <address>
                         <a href="telto:512.371.7842">512.371.7842</a>
                     </address>
                 </div>

@@ -1,11 +1,46 @@
 .mobile_final {
-  .repeat-item {
+  .container {
+    max-width: 1140px;
+  }
+  .spacer {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  .flexslider {
+    margin: 0;
+      .flex-control-paging {
+        top: 0;
+        bottom: auto;
+        li {
+          a {
+            &.flex-active {
+              background-color: #1c5ca8;
+            }
+          }
+        }
+      }
+    .slides_caption{
+        p{
+            margin: 0;
+        }
+        span{
+            font-style:italic;
+            font-size: 18px;
+        }
+    }
+  }
+  .work_with_us {
+    img {
+      box-shadow: 1px 1px 34px 2px #797676c4;
+      -webkit-box-shadow: 13px 1px 18px 0px #797676c4;
+    }
+    .btn-container {
+      margin-top: 5rem;
+    }
+  }
+  .mobile-grid {
+    .col {
       flex: 1 0 34%;
-      &:nth-child(odd){
-          padding-right: 15px;
-      }
-      &:nth-child(even){
-          padding-left: 15px;
-      }
+    }
   }
 }

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
     <!-- Include All CSS here-->
+    <link rel="stylesheet" type="text/css" href="./css/flexslider.css" />
     <link rel="stylesheet" type="text/css" href="./scss/main.css" />
     <link rel="stylesheet" type="text/css" href="./scss/pages/mobile-final/mobile-final.css" />
 
@@ -77,15 +78,31 @@
                     development services can bring to an organization. So, if you want to make your business stand out,
                     you need to have an amazing mobile app & EX2 is your platform to build it. We offer mobile
                     application development of any complexity for enterprises and small businesses.</p>
-                <div class="slider">
-                    <img srcset=" ./assets/images/mobile-final/layer-20@3x.png 3x,
-                        ./assets/images/mobile-final/layer-20@2x.png 2x,
-                        ./assets/images/mobile-final/layer-20.png 1x"
-                        src="./assets/images/mobile-final/layer-20.png" />
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li><img srcset=" ./assets/images/mobile-final/layer-20@3x.png 3x,
+                            ./assets/images/mobile-final/layer-20@2x.png 2x,
+                            ./assets/images/mobile-final/layer-20.png 1x"
+                                src="./assets/images/mobile-final/layer-20.png" />
+                            <div class="slides_caption">
+                                <p class="margin-0">LOREM IPSUM, Dolor Sit Amet </p>
+                                <span>Germany</span>
+                            </div>
+                        </li>
+                        <li><img srcset=" ./assets/images/mobile-final/layer-20@3x.png 3x,
+                                ./assets/images/mobile-final/layer-20@2x.png 2x,
+                                ./assets/images/mobile-final/layer-20.png 1x"
+                                src="./assets/images/mobile-final/layer-20.png" />
+                            <div class="slides_caption">
+                                <p class="margin-0">LOREM IPSUM, Dolor Sit Amet </p>
+                                <span>Germany</span>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
-        <section class="spacer">
+        <section class="spacer work_with_us">
             <div class="container">
                 <div class="flex-space-between">
                     <img srcset=" ./assets/images/mobile-final/layer-21@3x.png 3x,
@@ -101,42 +118,42 @@
                         ./assets/images/mobile-final/layer-23.png 1x"
                         src="./assets/images/mobile-final/layer-23.png" />
                 </div>
-                <div class="text-center">
-                    <button class="btn btn-primary">
+                <div class="btn-container text-center">
+                    <button class="btn btn-primary btn-rounded">
                         WORK WITH US
                     </button>
                 </div>
             </div>
         </section>
-        <section class="spacer">
+        <section class="spacer mobile-grid">
             <div class="container">
-                <div class="flex-space-between flex-center">
-                    <div class="repeat-item">
+                <div class="row flex-space-between flex-center">
+                    <div class="col">
                         <h2>Idea</h2>
                         <p>Whether you need a new mobile app, or redesign the existing one, we can help you to bring the
                             most adventuresome business ideas to life.
                         </p>
                     </div>
-                    <div class="repeat-item">
+                    <div class="col">
                         <img srcset=" ./assets/images/mobile-final/layer-25@3x.png 3x,
                             ./assets/images/mobile-final/layer-25@2x.png 2x,
                             ./assets/images/mobile-final/layer-25.png 1x"
                             src="./assets/images/mobile-final/layer-25.png" />
                     </div>
-                    <div class="repeat-item">
+                    <div class="col">
                         <img srcset=" ./assets/images/mobile-final/layer-126-copy@3x.png 3x,
                             ./assets/images/mobile-final/layer-126-copy@2x.png 2x,
                             ./assets/images/mobile-final/layer-126-copy.png 1x"
                             src="./assets/images/mobile-final/layer-126-copy.png" />
                     </div>
-                    <div class="repeat-item">
+                    <div class="col">
                         <h2>Solutions</h2>
                         <p>We offer end-to-end mobile development services & solutions and build high performance
                             Android and iOS mobile apps with your achievements in mind. Our apps work smoothly on
                             iPhones & iPads of different generations as well as hundreds of Android devices
                         </p>
                     </div>
-                    <div class="repeat-item">
+                    <div class="col">
                         <h2>Success</h2>
                         <p>Mobile apps created by EX2 are elaborate, offer great usability and leave users satisfied.
                             Our mobile development team has hand on experience in delivering solutions that have
@@ -144,7 +161,7 @@
 
                         </p>
                     </div>
-                    <div class="repeat-item">
+                    <div class="col">
                         <img srcset=" ./assets/images/mobile-final/layer-26@3x.png 3x,
                             ./assets/images/mobile-final/layer-26@2x.png 2x,
                             ./assets/images/mobile-final/layer-26.png 1x"
@@ -214,6 +231,15 @@
         </div>
     </footer>
     <!--footer-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="./js/flexslider.min.js"></script>
+    <script>
+        $(window).load(function () {
+            $('.flexslider').flexslider({
+                animation: "slide"
+            });
+        });
+    </script>
 </body>
 
 </html>

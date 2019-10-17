@@ -740,6 +740,10 @@ label {
   font-weight: 400;
 }
 
+.nav-menu {
+  display: none;
+}
+
 @media (max-width: 767px) {
   nav {
     display: none;

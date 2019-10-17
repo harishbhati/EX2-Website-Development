@@ -60,7 +60,9 @@
             }
         }
 }
-
+.nav-menu{
+    display: none;
+}
 @include max-width-for(phone){
 
     nav{

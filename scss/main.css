@@ -709,6 +709,12 @@ label {
   transition: all .5s ease;
 }
 
+@media (max-width: 767px) {
+  .nav-list__sub-list {
+    display: none;
+  }
+}
+
 .nav-list__sub-list:before {
   content: "";
   border-bottom: 19px solid #ccc;
@@ -732,6 +738,62 @@ label {
 .nav-list__sub-list .nav-list__link {
   text-transform: initial;
   font-weight: 400;
+}
+
+@media (max-width: 767px) {
+  nav {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+  }
+  nav .nav-list {
+    display: block;
+    margin-top: 80px;
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 80px);
+    background: #fff;
+    padding-top: 30px;
+    overflow: auto;
+  }
+  nav .nav-list__item {
+    padding-top: 30px;
+  }
+  nav .nav-list__item:hover .nav-list__sub-list {
+    display: block;
+    opacity: 1;
+    position: relative;
+    border: none;
+    top: 0;
+    padding: 0 20px;
+  }
+  nav .nav-list__item:hover .nav-list__sub-list::after, nav .nav-list__item:hover .nav-list__sub-list:before {
+    content: none;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .nav-menu:checked ~ .header__container nav {
+    display: block;
+  }
+  .nav-menu:checked ~ .header__container .header__ex2-humburger {
+    position: relative;
+    z-index: 10;
+  }
+  .nav-menu:checked ~ .header__container .header__ex2-humburger__inner {
+    top: 4px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .nav-menu:checked ~ .header__container .header__ex2-humburger__inner:before {
+    top: 0;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
 }
 
 .container {
@@ -876,50 +938,6 @@ label {
 .header__ex2-humburger__inner:after {
   top: 12px;
   content: none;
-}
-
-@media (max-width: 767px) {
-  nav {
-    display: none;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 9;
-  }
-  nav .nav-list {
-    display: block;
-    margin-top: 80px;
-    position: absolute;
-    width: 100%;
-    height: calc(100% - 80px);
-    background: #fff;
-    padding-top: 30px;
-  }
-  nav .nav-list__item {
-    padding-top: 30px;
-  }
-  .nav-menu {
-    display: none;
-  }
-  .nav-menu:checked ~ .header__container nav {
-    display: block;
-  }
-  .nav-menu:checked ~ .header__container .header__ex2-humburger {
-    position: relative;
-    z-index: 10;
-  }
-  .nav-menu:checked ~ .header__container .header__ex2-humburger__inner {
-    top: 4px;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-  }
-  .nav-menu:checked ~ .header__container .header__ex2-humburger__inner:before {
-    top: 0;
-    -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg);
-  }
 }
 
 .footer img {

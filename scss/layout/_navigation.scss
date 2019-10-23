@@ -3,13 +3,18 @@
         list-style: none;
         margin-bottom: 0;
         font-family: $lato-regular;
-        &__item:hover{
-            .nav-list__sub-list{
-                    opacity: 1;
-                    top:75px;
-                    transition: all .5s ease;
-                }
+        &__item{
+            position: relative;
+            &:hover{
+                .nav-list__sub-list{
+                        visibility: visible;
+                        opacity: 1;
+                        top:calc(100% + 40px);
+                        transition: all .5s ease;
+                    }
+            }
         }
+
         &__link{
            color: $black;    
            text-transform: uppercase;
@@ -32,6 +37,7 @@
             padding: 20px;
             top:100%;
             opacity: 0;
+            visibility: hidden;
             transition: all .5s ease;
             @include max-width-for(phone){
                 display: none;

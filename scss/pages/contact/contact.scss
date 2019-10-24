@@ -1,21 +1,35 @@
 @import "../../base/variables";
+@import "../../base/mixins";
 .contact-form {
   p {
     font-size: 20px;
   }
+  @include max-width-for(phone){
+  .action-btn{
+    text-align: center;
+  }
+ }
   .input-box {
     position: relative;
     width: 100%;
     padding: 20px 50px;
     box-sizing: border-box;
     margin-bottom: 20px;
+    font-family: $lato-regular;
+    @include max-width-for(phone){
+     padding:20px  0;
+  }
     &__label{
       position: absolute;
-      font-family: Lato;
+      font-family: $lato-regular;
       font-size: 24px;
       top: 20px;
       left: 50px;
       transition: .5s ease;
+      text-transform: capitalize;
+      @include max-width-for(phone){
+       left: 0px;
+    }
     }
     &__input-control{
       position: relative;
@@ -26,27 +40,42 @@
       border-bottom: 3px solid #ccc;
       padding: 10px 5px 10px 0;
       outline: none;
-      color: #000;
+      color: #000;     
+      font-family: $lato-regular;
       z-index: 2;
        &:focus ~ .input-box__label, &:valid ~ .input-box__label {
           top: 0;
-          font-size: 16px;
+          font-size: 18px;
           color:#16447d;
        }
     }
   }
   form{
     padding-left: 10%;
+    @include max-width-for(phone){
+      padding-left:0;
+   }
   }
   .btn{
     margin-left: 50px;
+    @include max-width-for(phone){
+      margin-left:0;
+   }
   }
 }
 
 .contact-info{
-  &__title{
-    font-family: $lato-regular;
-  }
+  font-family: $lato-regular;
+  @include max-width-for(phone){
+  text-align: center;
+ }
+h5{
+  margin-bottom: 30px;
+  @include max-width-for(phone){
+  margin-bottom: 10px;
+  text-transform: uppercase;
+   }
+}
   .loction-link__icon{
       background: url("../../../assets/images/contact/map.png") no-repeat;
       background-size: cover;
@@ -55,13 +84,16 @@
       height: 125px;
       margin-right: 35px;
       margin-top: 30px;
+      @include max-width-for(phone){
+      display: none;
+     }
   }
   &__addr{
     display: flex;
     a{
       color:#000 ;
-      font-family:'lato';
-      text-transform: uppercase;
+      font-family: $lato-regular;
+      text-transform: capitalize;
       &:hover{
         color: #1795d2;
         text-decoration: underline;
@@ -71,9 +103,17 @@
   address{
     font-style: normal;
     font-size: 1.3rem;
-    text-transform: uppercase;
+    font-family: $lato-regular;
+    @include max-width-for(phone){
+      margin-bottom: 30px;
+    
+       }
       a {
       color: #000;
+      &:hover{
+        color: #1795d2;
+        text-decoration: underline;
+      }
     }
   }
 }

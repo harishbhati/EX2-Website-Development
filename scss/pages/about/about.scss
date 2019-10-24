@@ -1,11 +1,5 @@
 @import "../../base/variables";
 .about-desc {
-    h2 {
-        margin-bottom: 3rem;
-    }
-    p {
-        font-size: 0.9rem;
-    }
     .row {
         margin-top: 80px;
     }
@@ -18,9 +12,6 @@
 }
 
 .about-exp {
-    p {
-        font-size: 0.9rem;
-    }
     .col {
         margin-bottom: 50px;
     }
@@ -32,6 +23,7 @@
     }
     
 }
+
 .about-descbg {
     position: relative;
     padding-bottom: 35%;
@@ -82,10 +74,6 @@
     h2 {
         margin-bottom: 3rem;
     }
-    p {
-        font-size: 20px;
-    }
-
 }
 .about-homesite {
     &__leftinfo {
@@ -95,7 +83,7 @@
         background: url(../../../assets/images/about-homesite.jpg) no-repeat center;
         padding: 25px;
         background-size: cover;
-        min-height: 795px;
+        min-height: 740px;
         display: flex;
         align-items: flex-end;
         h3,p {

@@ -1,5 +1,5 @@
 @import "../../base/variables";
-.data-science{
+.data-science {
     .data-science__text-left,.data-science__text-right{
         background: url(../../../assets/images/datascience/dot-bg.png) no-repeat center;
         background-size: auto;
@@ -19,6 +19,7 @@
     }
     .h2{
         color: $blue;
+        margin-bottom: 0;
     }
 }
 .hexagone {

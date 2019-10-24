@@ -42,7 +42,7 @@
 }
 
 .about-team__card {
-  margin-bottom: 50px;
+  margin-bottom: 1rem;
 }
 
 .about-team__cardpadding {
@@ -62,11 +62,11 @@
 }
 
 .about-team figcaption {
-  padding: 40px 15px;
+  padding: 2.2rem .9rem;
 }
 
 .about-team figcaption h4 {
-  margin-bottom: 10px;
+  margin-bottom: .6rem;
   font-family: "Lato-Regular";
 }
 

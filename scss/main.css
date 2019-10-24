@@ -13,7 +13,7 @@ sup {
 }
 
 sup {
-  top: -.3em;
+  top: -.6em;
 }
 
 img {
@@ -21,6 +21,23 @@ img {
   height: auto;
   vertical-align: middle;
   border-style: none;
+}
+
+main ul li {
+  position: relative;
+  padding-left: 2rem;
+}
+
+main ul li:before {
+  content: 'L';
+  -webkit-transform: scaleX(-1) rotate(-35deg);
+  transform: scaleX(-1) rotate(-40deg);
+  font-family: arial;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  font-weight: normal;
+  font-size: 1.1rem;
 }
 
 [type=button],
@@ -521,8 +538,8 @@ body {
 }
 
 .spacer {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .block {
@@ -607,6 +624,28 @@ body {
           justify-content: space-between;
 }
 
+section .heading-dotbg {
+  background: url(../../../assets/images/datascience/dot-bg.png) no-repeat center;
+  background-size: auto;
+  background-position: top left;
+  padding-top: 2rem;
+  padding-left: 2rem;
+}
+
+section .heading-blue {
+  color: #1795d2;
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .mb-0 {
+    margin-bottom: 0;
+  }
+  .pb-0 {
+    padding-bottom: 0;
+  }
+}
+
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   font-family: "Lato-Semibold";
   line-height: 1.2;
@@ -679,17 +718,21 @@ label {
 .nav-list__item:hover .nav-list__sub-list {
   visibility: visible;
   opacity: 1;
-  top: calc(100% + 40px);
+  top: calc(100% + 25px);
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
 }
 
+.nav-list__item [href="javascript:void(0)"] {
+  cursor: default;
+}
+
 .nav-list__link {
   color: #000;
-  text-transform: uppercase;
-  font-size: 18px;
+  text-transform: capitalize;
+  font-size: 1.1rem;
   font-family: "Lato-Semibold";
-  padding: 18px 20px;
+  padding: 1rem 1.1rem;
   letter-spacing: 0.45px;
   white-space: nowrap;
 }
@@ -715,7 +758,7 @@ label {
   transition: all .5s ease;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
   .nav-list__sub-list {
     display: none;
   }
@@ -750,7 +793,7 @@ label {
   display: none;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
   nav {
     display: none;
     position: fixed;
@@ -812,7 +855,24 @@ label {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  max-width: 1330px;
+}
+
+@media (min-width: 1025px) {
+  .container {
+    max-width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1330px;
+  }
 }
 
 .row {
@@ -881,8 +941,9 @@ label {
 .header {
   position: relative;
   background: #fff;
-  border-bottom: 1px solid #f5f5f5;
-  padding: 48px 0 46px 0;
+  -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.22);
+          box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.22);
+  padding: 1.6rem 0;
 }
 
 .header__container {
@@ -899,10 +960,6 @@ label {
           justify-content: space-between;
 }
 
-.header__logo img {
-  width: 316px;
-}
-
 @media (max-width: 1024px) {
   .header__logo img {
     max-width: 190px;
@@ -917,7 +974,7 @@ label {
   display: none;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
   .header__ex2-humburger #humburgerTrigger {
     display: block;
   }

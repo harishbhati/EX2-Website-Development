@@ -4,7 +4,15 @@
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-    max-width: 1330px;
+    @include for-size(tablet-up){
+        max-width: 970px;
+    }
+    @include for-size(small-desktop){
+        max-width: 1170px;
+    }
+    @include for-size(large-desktop){
+        max-width: 1330px;
+    }
 }
 .row {
     margin-right: -15px;

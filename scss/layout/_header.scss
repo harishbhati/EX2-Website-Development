@@ -2,8 +2,8 @@
 .header{
     position: relative;
     background:$white;
-    border-bottom: 1px solid #f5f5f5;
-    padding: 48px 0 46px 0;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,.22);
+    padding: 1.6rem 0;
     &__container {
         max-width: 90%;
         margin: 0 auto;
@@ -11,7 +11,6 @@
     }
     &__logo{
         img{
-            width: 316px;
             @include max-width-for(tablet){
                 max-width: 190px;
             }
@@ -24,7 +23,7 @@
             display: inline-block;
             position: relative;
             display: none;
-            @include max-width-for(phone){
+            @include max-width-for(tablet){
                 display: block;
             }
         }

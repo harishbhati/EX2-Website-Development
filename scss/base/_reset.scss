@@ -12,7 +12,7 @@ sup {
 }
 
 sup {
-    top: -.3em
+    top: -.6em
 }
 
 
@@ -22,7 +22,25 @@ img {
     vertical-align: middle;
     border-style: none;
 }
-
+main{
+ul{
+    li{
+      position: relative; 
+      padding-left: 2rem; 
+      &:before{
+          content:'L';
+          -webkit-transform: scaleX(-1) rotate(-35deg);
+            transform: scaleX(-1) rotate(-40deg);
+            font-family: arial;
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            font-weight: normal;
+            font-size: 1.1rem;
+      }
+    }
+}
+}
 [type=button],
 [type=reset],
 [type=submit],

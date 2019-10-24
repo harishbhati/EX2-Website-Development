@@ -2,6 +2,12 @@
   font-size: 20px;
 }
 
+@media (max-width: 767px) {
+  .contact-form .action-btn {
+    text-align: center;
+  }
+}
+
 .contact-form .input-box {
   position: relative;
   width: 100%;
@@ -9,16 +15,30 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-bottom: 20px;
+  font-family: "Lato-Regular";
+}
+
+@media (max-width: 767px) {
+  .contact-form .input-box {
+    padding: 20px  0;
+  }
 }
 
 .contact-form .input-box__label {
   position: absolute;
-  font-family: Lato;
+  font-family: "Lato-Regular";
   font-size: 24px;
   top: 20px;
   left: 50px;
   -webkit-transition: .5s ease;
   transition: .5s ease;
+  text-transform: capitalize;
+}
+
+@media (max-width: 767px) {
+  .contact-form .input-box__label {
+    left: 0px;
+  }
 }
 
 .contact-form .input-box__input-control {
@@ -32,12 +52,13 @@
   padding: 10px 5px 10px 0;
   outline: none;
   color: #000;
+  font-family: "Lato-Regular";
   z-index: 2;
 }
 
 .contact-form .input-box__input-control:focus ~ .input-box__label, .contact-form .input-box__input-control:valid ~ .input-box__label {
   top: 0;
-  font-size: 16px;
+  font-size: 18px;
   color: #16447d;
 }
 
@@ -45,12 +66,41 @@
   padding-left: 10%;
 }
 
+@media (max-width: 767px) {
+  .contact-form form {
+    padding-left: 0;
+  }
+}
+
 .contact-form .btn {
   margin-left: 50px;
 }
 
-.contact-info__title {
+@media (max-width: 767px) {
+  .contact-form .btn {
+    margin-left: 0;
+  }
+}
+
+.contact-info {
   font-family: "Lato-Regular";
+}
+
+@media (max-width: 767px) {
+  .contact-info {
+    text-align: center;
+  }
+}
+
+.contact-info h5 {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+  .contact-info h5 {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
 }
 
 .contact-info .loction-link__icon {
@@ -63,6 +113,12 @@
   margin-top: 30px;
 }
 
+@media (max-width: 767px) {
+  .contact-info .loction-link__icon {
+    display: none;
+  }
+}
+
 .contact-info__addr {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -71,8 +127,8 @@
 
 .contact-info__addr a {
   color: #000;
-  font-family: 'lato';
-  text-transform: uppercase;
+  font-family: "Lato-Regular";
+  text-transform: capitalize;
 }
 
 .contact-info__addr a:hover {
@@ -83,10 +139,21 @@
 .contact-info address {
   font-style: normal;
   font-size: 1.3rem;
-  text-transform: uppercase;
+  font-family: "Lato-Regular";
+}
+
+@media (max-width: 767px) {
+  .contact-info address {
+    margin-bottom: 30px;
+  }
 }
 
 .contact-info address a {
   color: #000;
+}
+
+.contact-info address a:hover {
+  color: #1795d2;
+  text-decoration: underline;
 }
 /*# sourceMappingURL=contact.css.map */

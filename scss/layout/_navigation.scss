@@ -9,18 +9,21 @@
                 .nav-list__sub-list{
                         visibility: visible;
                         opacity: 1;
-                        top:calc(100% + 40px);
+                        top:calc(100% + 25px);
                         transition: all .5s ease;
                     }
+            }
+            [href="javascript:void(0)"]{
+                cursor: default;
             }
         }
 
         &__link{
            color: $black;    
-           text-transform: uppercase;
-           font-size: 18px;
+           text-transform: capitalize;
+           font-size: 1.1rem;
            font-family: $lato-semibold;
-           padding: 18px 20px;
+           padding: 1rem 1.1rem;
             letter-spacing: 0.45px;
            white-space: nowrap;
            &:hover, &.active{
@@ -39,7 +42,7 @@
             opacity: 0;
             visibility: hidden;
             transition: all .5s ease;
-            @include max-width-for(phone){
+            @include max-width-for(tablet){
                 display: none;
             }
             &:before {
@@ -69,7 +72,7 @@
 .nav-menu{
     display: none;
 }
-@include max-width-for(phone){
+@include max-width-for(tablet){
 
     nav{
         display: none;

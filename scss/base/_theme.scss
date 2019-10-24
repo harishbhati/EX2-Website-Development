@@ -36,8 +36,8 @@ body {
     align-self:center;
 }
 .spacer{
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
 }
 .block {
     display: block;
@@ -81,6 +81,28 @@ body {
 .justify-content-between {
     @extend .d-flex;
     @include flex_justify(space-between);
+}
+section{
+    .heading-dotbg{
+        background: url(../../../assets/images/datascience/dot-bg.png) no-repeat center;
+        background-size: auto;
+        background-position: top left;
+        padding-top: 2rem;
+        padding-left: 2rem;
+    }
+    .heading-blue{
+        color: #1795d2;
+        margin-bottom: 0;
+    }
+}
+
+@include for-size(tablet){
+    .mb-0{
+        margin-bottom: 0;
+    }
+    .pb-0{
+        padding-bottom: 0;
+    }
 }
 
 

@@ -8,17 +8,6 @@
   }
   .flexslider {
     margin: 0;
-      .flex-control-paging {
-        top: 0;
-        bottom: auto;
-        li {
-          a {
-            &.flex-active {
-              background-color: #1c5ca8;
-            }
-          }
-        }
-      }
     .slides_caption{
         span{
             font-style:italic;

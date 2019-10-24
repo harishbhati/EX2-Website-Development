@@ -1,11 +1,3 @@
-.data-science .data-science__text-left, .data-science .data-science__text-right {
-  background: url(../../../assets/images/datascience/dot-bg.png) no-repeat center;
-  background-size: auto;
-  background-position: top left;
-  padding-top: 2rem;
-  padding-left: 2rem;
-}
-
 .data-science .data-science__top {
   background: url(../../../assets/images/datascience/data-bg.png) no-repeat center;
   background-size: auto;
@@ -16,11 +8,6 @@
   background: url(../../../assets/images/datascience/process-bg.png) no-repeat center;
   background-size: 36rem;
   background-position: top left;
-}
-
-.data-science .h2 {
-  color: #1d5ca9;
-  margin-bottom: 0;
 }
 
 .hexagone {

@@ -1,8 +1,13 @@
+@import "./../../base/mixins";
+
 .industry {
   /*circles*/
   .circles {
     max-width: 90%;
     margin: 54px auto 0 auto;
+    @include max-width-for(phone) {
+      justify-content: center;
+    }
     .circles_item {
       flex-direction: column;
       .circle {
@@ -20,25 +25,31 @@
       grid-template-areas:
         "a b"
         "c b";
+      @include max-width-for(phone) {
+        grid-template-areas:
+          "a a"
+          "b b"
+          "c c";
+      }
       .item1 {
         grid-area: a;
-        margin-bottom: 29px;
+        margin-bottom: 1.5rem;
       }
       .item2 {
         grid-area: b;
+        margin-bottom: 1.5rem;
       }
       .item3 {
         grid-area: c;
       }
     }
     .sitecore_bottom {
-      padding-top: 1.8rem;
-      .checked_icon {
-        width: 74px;
-        text-align: center;
-      }
-      > div {
-        padding-bottom: 1.8rem;
+      > ul {
+        padding-top: 1.8rem;
+        padding-left: 1.5rem;
+        li {
+          padding-bottom: 1.8rem;
+        }
       }
     }
   }
@@ -63,10 +74,13 @@
     .squares {
       max-width: 800px;
       margin: 0 auto;
+      @include max-width-for(phone) {
+        justify-content: center;
+      }
       .squares_item {
-        width: 200px;
-        height: 200px;
-        padding: 40px 0 40px 30px;
+        width: 11.1rem;
+        height: 11.1rem;
+        padding: 2.25rem 0 2.25rem 1.66rem;
         text-align: left;
         color: #fff;
         > div {
@@ -109,11 +123,33 @@
   }
   /*business process*/
   .business_process {
-    .business_process_left {
-      width: 58%;
-    }
-    .business_process_right {
-      width: 42%;
+    .business_process_grid {
+      display: grid;
+      grid-template-columns: 55% 42%;
+      grid-template-rows: auto auto;
+      grid-template-areas:
+        "a b"
+        "c b";
+      @include max-width-for(phone) {
+        grid-template-areas:
+          "a a"
+          "b b"
+          "c c";
+      }
+      .item1 {
+        grid-area: a;
+        margin-bottom: 1.5rem;
+      }
+      .item2 {
+        grid-area: b;
+        margin-bottom: 1.5rem;
+      }
+      .item3 {
+        grid-area: c;
+        @include max-width-for(phone) {
+          text-align: center;
+        }
+      }
     }
   }
   /*system*/
@@ -140,8 +176,14 @@
       margin: 0 auto;
       max-width: 480px;
       justify-content: space-between;
+      @include max-width-for(phone) {
+        max-width: 190px;
+      }
       > div {
         min-width: 230px;
+        @include max-width-for(phone) {
+          min-width: 90px;
+        }
       }
       .hexagone {
         height: 230px;
@@ -150,6 +192,10 @@
         margin: 0 auto;
         transform: rotate(90deg);
         -webkit-transform: rotate(90deg);
+        @include max-width-for(phone) {
+          height: 90px;
+          width: calc(90px * 0.57735);
+        }
         &:before,
         &:after {
           position: absolute;
@@ -159,6 +205,9 @@
           height: inherit;
           width: inherit;
           content: "";
+          @include max-width-for(phone) {
+            right: calc((100% / 2) - ((90px * 0.57735) / 2));
+          }
         }
         &:before {
           transform: rotateZ(-60deg);
@@ -177,6 +226,10 @@
           z-index: 1;
           transform: rotate(-90deg);
           -webkit-transform: rotate(-90deg);
+          @include max-width-for(phone) {
+            min-width: 90px;
+            font-size: 0.75rem;
+          }
         }
       }
       &.hexagones_top {
@@ -194,6 +247,9 @@
       &.hexagones_middle {
         max-width: 710px;
         margin-top: -10px;
+        @include max-width-for(phone) {
+          max-width: 290px;
+        }
         div:first-child {
           .hexagone {
             background-color: #0b79bc;
@@ -204,9 +260,16 @@
             background-color: #050708;
             height: 175px;
             width: calc(175px * 0.57735);
+            @include max-width-for(phone) {
+              height: 65px;
+              width: calc(65px * 0.57735);
+            }
             &:before,
             &:after {
               right: calc((100% / 2) - ((175px * 0.57735) / 2));
+              @include max-width-for(phone) {
+                right: calc((100% / 2) - ((65px * 0.57735) / 2));
+              }
             }
           }
         }

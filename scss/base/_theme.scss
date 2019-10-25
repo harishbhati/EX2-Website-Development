@@ -85,6 +85,9 @@ section{
         background-position: top left 15px;
         padding-top: 2rem;
         padding-left: 2rem;
+        @include max-width-for(phone){
+            background-size: 10rem;
+        }
     }
     .heading-blue{
         color: #1795d2;

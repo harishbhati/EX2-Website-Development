@@ -5,7 +5,7 @@
         background: url(../../../assets/images/datascience/data-bg.png) no-repeat center;
         background-size: auto;
         background-position: top right -11rem; 
-        @include max-width-for(phone){
+        @include max-width-for(tablet){
             background-size: contain;
         }
     }
@@ -13,7 +13,7 @@
         background: url(../../../assets/images/datascience/process-bg.png) no-repeat center;
         background-size: 36rem;
         background-position: top left;
-        @include max-width-for(phone){
+        @include max-width-for(tablet){
             background-size: contain;
         }
     }

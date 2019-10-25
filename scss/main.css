@@ -628,6 +628,12 @@ section .heading-dotbg {
   padding-left: 2rem;
 }
 
+@media (max-width: 767px) {
+  section .heading-dotbg {
+    background-size: 10rem;
+  }
+}
+
 section .heading-blue {
   color: #1795d2;
   margin-bottom: 0;

@@ -8,6 +8,9 @@ html {
     @include max-width-for(phone){
         font-size: 15px; 
     }
+    @include max-width-for(smallPhone){
+        font-size: 12px; 
+    }
 }
 body {
     font-size: 1rem;

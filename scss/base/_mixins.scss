@@ -208,6 +208,9 @@
 
 //media query for Max-Width
 @mixin max-width-for($size) {
+    @if $size == smallPhone {
+        @media (max-width: 359px) { @content; }
+    } 
     @if $size == phone {
         @media (max-width: 767px) { @content; }
     } 

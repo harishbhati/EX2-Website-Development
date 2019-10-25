@@ -27,7 +27,7 @@
 .contact-form .input-box__label {
   position: absolute;
   font-family: "Lato-Regular";
-  font-size: 24px;
+  font-size: 1.3rem;
   top: 20px;
   left: 50px;
   -webkit-transition: .5s ease;
@@ -42,6 +42,7 @@
 }
 
 .contact-form .input-box__input-control {
+  font-size: 1rem;
   position: relative;
   width: 100%;
   -webkit-box-sizing: border-box;

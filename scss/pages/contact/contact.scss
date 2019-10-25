@@ -22,7 +22,7 @@
     &__label{
       position: absolute;
       font-family: $lato-regular;
-      font-size: 24px;
+      font-size: 1.3rem;
       top: 20px;
       left: 50px;
       transition: .5s ease;
@@ -32,6 +32,7 @@
     }
     }
     &__input-control{
+      font-size: 1rem;
       position: relative;
       width: 100%;
       box-sizing: border-box;

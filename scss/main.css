@@ -154,339 +154,217 @@ button::-moz-focus-inner {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon';
   speak: none;
+  font-size: 6rem;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
   line-height: 1;
+  position: absolute;
+  z-index: 1;
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-data-extraction .path1:before {
+.icon-artificial-intelligence {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.icon-arrow_bottom:before {
   content: "\e900";
-  color: #1c5ca8;
-  opacity: 0.4;
+  color: #205da8;
 }
 
-.icon-data-extraction .path2:before {
+.icon-artificial-intelligence:before {
   content: "\e901";
-  margin-left: -0.81640625em;
-  color: #1795d2;
+  color: #fff;
 }
 
-.icon-data-extraction .path3:before {
+.icon-business-intelligence:before {
   content: "\e902";
-  margin-left: -0.81640625em;
-  color: white;
 }
 
-.icon-machine-learning .path1:before {
+.icon-business-scaling:before {
   content: "\e903";
-  color: #1c5ca8;
-  opacity: 0.4;
-}
-
-.icon-machine-learning .path2:before {
-  content: "\e904";
-  margin-left: -0.8193359375em;
-  color: #1795d2;
-}
-
-.icon-machine-learning .path3:before {
-  content: "\e905";
-  margin-left: -0.8193359375em;
-  color: white;
-}
-
-.icon-machine-learning .path4:before {
-  content: "\e906";
-  margin-left: -0.8193359375em;
-  color: white;
-}
-
-.icon-machine-learning .path5:before {
-  content: "\e907";
-  margin-left: -0.8193359375em;
-  color: white;
-}
-
-.icon-machine-learning .path6:before {
-  content: "\e908";
-  margin-left: -0.8193359375em;
-  color: white;
-}
-
-.icon-artificial-intelligence .path1:before {
-  content: "\e909";
-  color: #1c5ca8;
-  opacity: 0.4;
-}
-
-.icon-artificial-intelligence .path2:before {
-  content: "\e90a";
-  margin-left: -0.81640625em;
-  color: #1795d2;
-}
-
-.icon-artificial-intelligence .path3:before {
-  content: "\e90b";
-  margin-left: -0.81640625em;
-  color: white;
-}
-
-.icon-heart-icon .path1:before {
-  content: "\e90c";
-  color: white;
-}
-
-.icon-heart-icon .path2:before {
-  content: "\e90d";
-  margin-left: -1em;
-  color: #0674b9;
 }
 
 .icon-cloud-teaching .path1:before {
-  content: "\e90e";
+  content: "\e904";
   color: white;
 }
 
 .icon-cloud-teaching .path2:before {
-  content: "\e90f";
+  content: "\e905";
   margin-left: -1em;
   color: #0674b9;
 }
 
 .icon-cloud-teaching .path3:before {
-  content: "\e910";
+  content: "\e906";
   margin-left: -1em;
   color: #0674b9;
 }
 
 .icon-cloud-teaching .path4:before {
-  content: "\e911";
+  content: "\e907";
   margin-left: -1em;
   color: #0674b9;
 }
 
 .icon-cloud-teaching .path5:before {
-  content: "\e912";
+  content: "\e908";
   margin-left: -1em;
   color: #0674b9;
 }
 
 .icon-cloud-teaching .path6:before {
-  content: "\e913";
+  content: "\e909";
   margin-left: -1em;
   color: #0674b9;
 }
 
 .icon-cloud-teaching .path7:before {
-  content: "\e914";
+  content: "\e90a";
   margin-left: -1em;
   color: #0674b9;
 }
 
 .icon-cloud-teaching .path8:before {
-  content: "\e915";
+  content: "\e90b";
   margin-left: -1em;
   color: #0674b9;
 }
 
-.icon-target .path1:before {
+.icon-consulting-needs-assessment:before {
+  content: "\e90c";
+  color: #fff;
+}
+
+.icon-creative-technical-excellence:before {
+  content: "\e90d";
+}
+
+.icon-CRM-system-implementations:before {
+  content: "\e90e";
+  color: #fff;
+}
+
+.icon-CRM-system-migrations:before {
+  content: "\e90f";
+  color: #fff;
+}
+
+.icon-customer-engagement:before {
+  content: "\e910";
+}
+
+.icon-customer-experience:before {
+  content: "\e911";
+}
+
+.icon-customer-insight:before {
+  content: "\e912";
+  color: #fff;
+}
+
+.icon-customer-service:before {
+  content: "\e913";
+  color: #fff;
+}
+
+.icon-data-extraction:before {
+  content: "\e914";
+  color: #fff;
+}
+
+.icon-field-service:before {
+  content: "\e915";
+  color: #fff;
+}
+
+.icon-financials:before {
   content: "\e916";
+  color: #fff;
+}
+
+.icon-hand-select:before {
+  content: "\e917";
+}
+
+.icon-heart-icon .path1:before {
+  content: "\e918";
+  color: white;
+}
+
+.icon-heart-icon .path2:before {
+  content: "\e919";
+  margin-left: -1em;
+  color: #0674b9;
+}
+
+.icon-highly-functional:before {
+  content: "\e91a";
+}
+
+.icon-innovative-business-growth:before {
+  content: "\e91b";
+}
+
+.icon-machine-learning:before {
+  content: "\e91c";
+  color: #fff;
+}
+
+.icon-marketing:before {
+  content: "\e91d";
+  color: #fff;
+}
+
+.icon-operations:before {
+  content: "\e91e";
+  color: #fff;
+}
+
+.icon-pencil-pc:before {
+  content: "\e91f";
+}
+
+.icon-project-automation:before {
+  content: "\e920";
+  color: #fff;
+}
+
+.icon-sales:before {
+  content: "\e921";
+  color: #fff;
+}
+
+.icon-sync-devices:before {
+  content: "\e922";
+}
+
+.icon-system-data-integrations:before {
+  content: "\e923";
+  color: #fff;
+}
+
+.icon-target .path1:before {
+  content: "\e924";
   color: white;
 }
 
 .icon-target .path2:before {
-  content: "\e917";
+  content: "\e925";
   margin-left: -1em;
   color: #0674b9;
 }
 
 .icon-target .path3:before {
-  content: "\e918";
-  margin-left: -1em;
-  color: #0674b9;
-}
-
-.icon-sales:before {
-  content: "\e919";
-  color: #fff;
-}
-
-.icon-marketing:before {
-  content: "\e91a";
-  color: #fff;
-}
-
-.icon-customer-service:before {
-  content: "\e91b";
-  color: #fff;
-}
-
-.icon-operations:before {
-  content: "\e91c";
-  color: #fff;
-}
-
-.icon-customer-insight:before {
-  content: "\e91d";
-  color: #fff;
-}
-
-.icon-financials:before {
-  content: "\e91e";
-  color: #fff;
-}
-
-.icon-project-automation:before {
-  content: "\e91f";
-  color: #fff;
-}
-
-.icon-field-service:before {
-  content: "\e920";
-  color: #fff;
-}
-
-.icon-consulting-needs-assessment .path1:before {
-  content: "\e921";
-  color: #1b8ccc;
-}
-
-.icon-consulting-needs-assessment .path2:before {
-  content: "\e922";
-  margin-left: -1em;
-  color: white;
-}
-
-.icon-CRM-system-implementations .path1:before {
-  content: "\e923";
-  color: #1b8ccc;
-}
-
-.icon-CRM-system-implementations .path2:before {
-  content: "\e924";
-  margin-left: -1em;
-  color: white;
-}
-
-.icon-system-data-integrations .path1:before {
-  content: "\e925";
-  color: #1b8ccc;
-}
-
-.icon-system-data-integrations .path2:before {
   content: "\e926";
   margin-left: -1em;
-  color: white;
-}
-
-.icon-system-data-integrations .path3:before {
-  content: "\e927";
-  margin-left: -1em;
-  color: white;
-}
-
-.icon-system-data-integrations .path4:before {
-  content: "\e928";
-  margin-left: -1em;
-  color: white;
-}
-
-.icon-system-data-integrations .path5:before {
-  content: "\e929";
-  margin-left: -1em;
-  color: white;
-}
-
-.icon-CRM-system-migrations .path1:before {
-  content: "\e92a";
-  color: #1b8ccc;
-}
-
-.icon-CRM-system-migrations .path2:before {
-  content: "\e92b";
-  margin-left: -1em;
-  color: white;
-}
-
-.icon-CRM-system-migrations .path3:before {
-  content: "\e92c";
-  margin-left: -1em;
-  color: white;
-}
-
-.icon-CRM-system-migrations .path4:before {
-  content: "\e92d";
-  margin-left: -1em;
-  color: white;
-}
-
-.icon-CRM-system-migrations .path5:before {
-  content: "\e92e";
-  margin-left: -1em;
-  color: white;
-}
-
-.icon-CRM-system-migrations .path6:before {
-  content: "\e92f";
-  margin-left: -1em;
-  color: white;
-}
-
-.icon-CRM-system-migrations .path7:before {
-  content: "\e930";
-  margin-left: -1em;
-  color: white;
-}
-
-.icon-CRM-system-migrations .path8:before {
-  content: "\e931";
-  margin-left: -1em;
-  color: white;
-}
-
-.icon-customer-experience:before {
-  content: "\e932";
-}
-
-.icon-customer-engagement:before {
-  content: "\e933";
-}
-
-.icon-business-intelligence:before {
-  content: "\e934";
-}
-
-.icon-business-scaling:before {
-  content: "\e935";
-}
-
-.icon-innovative-business-growth:before {
-  content: "\e936";
-}
-
-.icon-creative-technical-excellence:before {
-  content: "\e937";
-}
-
-.icon-highly-functional:before {
-  content: "\e938";
-}
-
-.icon-hand-select:before {
-  content: "\e939";
-}
-
-.icon-pencil-pc:before {
-  content: "\e93a";
-}
-
-.icon-sync-devices:before {
-  content: "\e93b";
+  color: #0674b9;
 }
 
 html {
@@ -1032,6 +910,21 @@ label {
 .header__ex2-humburger__inner:after {
   top: 12px;
   content: none;
+}
+
+.header .header-social-share {
+  background: #000;
+  width: 4.7rem;
+  padding: 2.2rem .8rem;
+  border-radius: 40px 0 0 40px;
+  text-align: center;
+  position: fixed;
+  right: 0;
+  top: 125px;
+}
+
+.header .header-social-share li {
+  margin: 1.2rem 0;
 }
 
 .footer img {

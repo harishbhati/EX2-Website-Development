@@ -856,6 +856,7 @@ label {
   -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.22);
           box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.22);
   padding: 1.6rem 0;
+  z-index: 1;
 }
 
 .header__container {

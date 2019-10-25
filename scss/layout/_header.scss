@@ -4,6 +4,7 @@
     background:$white;
     box-shadow: 0 0 3px 0 rgba(0,0,0,.22);
     padding: 1.6rem 0;
+    z-index: 1;
     &__container {
         max-width: 90%;
         margin: 0 auto;

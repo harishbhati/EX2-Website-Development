@@ -1,14 +1,21 @@
 @import "../../base/variables";
+@import "../../base/mixins";
 .data-science {
     .data-science__top{
         background: url(../../../assets/images/datascience/data-bg.png) no-repeat center;
         background-size: auto;
         background-position: top right -11rem; 
+        @include max-width-for(phone){
+            background-size: contain;
+        }
     }
     .data-science__middle{
         background: url(../../../assets/images/datascience/process-bg.png) no-repeat center;
         background-size: 36rem;
         background-position: top left;
+        @include max-width-for(phone){
+            background-size: contain;
+        }
     }
 }
 .hexagone {
@@ -50,8 +57,11 @@
     }
     .bottom-align{
         display: flex;
-        flex-direction: column-reverse;
         align-items: center;
+        flex-direction: column-reverse;
+        @include max-width-for(phone){
+            flex-direction: column;
+        }
         .hexagone{
             margin-top: 26px;
             margin-bottom: 0;;

@@ -4,10 +4,22 @@
   background-position: top right -11rem;
 }
 
+@media (max-width: 767px) {
+  .data-science .data-science__top {
+    background-size: contain;
+  }
+}
+
 .data-science .data-science__middle {
   background: url(../../../assets/images/datascience/process-bg.png) no-repeat center;
   background-size: 36rem;
   background-position: top left;
+}
+
+@media (max-width: 767px) {
+  .data-science .data-science__middle {
+    background-size: contain;
+  }
 }
 
 .hexagone {
@@ -55,13 +67,22 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+
+@media (max-width: 767px) {
+  .what-next .bottom-align {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .what-next .bottom-align .hexagone {

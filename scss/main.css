@@ -537,7 +537,7 @@ body {
       flex-wrap: wrap !important;
 }
 
-.d-flex, .justify-content-center, .justify-content-between, .footer__bottom__links {
+.d-flex, .justify-content-center, .justify-content-between {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -952,8 +952,6 @@ label {
 .footer__career {
   background: #ddd url("/assets/images/growing-team.jpg") no-repeat center;
   background-size: cover;
-  text-align: center;
-  padding: 4rem 0px;
   min-height: 650px;
 }
 
@@ -976,14 +974,28 @@ label {
   border-bottom: 2px solid #0ddba3;
 }
 
-.footer__blog {
-  margin-bottom: 0.7rem;
+.footer__topimg {
+  background: url(../../assets/images/footerbg.jpeg) no-repeat center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.footer__topimg::after {
+  background-color: rgba(29, 92, 169, 0.5);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  z-index: -1;
 }
 
 .footer__bottom {
-  background-color: #e9edf0;
   padding: 0 0 2.5rem;
   position: relative;
+  background-color: #e9edf0;
 }
 
 .footer__bottom:before {
@@ -995,39 +1007,12 @@ label {
   top: 0;
 }
 
-.footer__bottom__about p {
-  font-size: 0.85rem;
-}
-
-.footer__bottom__links li:first-child a {
-  padding-left: 0;
-}
-
-.footer__bottom__links li:last-child a::after {
-  content: none;
-}
-
-.footer__bottom__links a:after {
-  content: "";
-  position: absolute;
-  width: 1px;
-  height: calc(100% - 2px);
-  background: #000;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  right: 0;
-}
-
-.footer__bottom__digitext h2 {
-  font-family: "Lato-Regular";
-  color: #181517;
-  font-size: 37px;
-  letter-spacing: -0.37px;
-}
-
 .footer__bottominfo {
   margin-top: 15px;
+}
+
+.footer__bottominfo p {
+  font-size: 0.85rem;
 }
 
 .footer__bottominfo h5 {
@@ -1051,7 +1036,11 @@ label {
   color: #fff;
 }
 
-.footer__blogdm {
+.footer__bottomblog {
+  margin-bottom: 0.7rem;
+}
+
+.footer__bottomblogdm {
   width: 65px;
   height: 65px;
   background: #000;
@@ -1070,24 +1059,34 @@ label {
           justify-content: center;
 }
 
-.footer__blogdm span {
+.footer__bottomblogdm span {
   line-height: normal;
   display: block;
 }
 
-.footer__blogdesc {
+.footer__bottomblogdesc {
   max-width: calc(100% - 76px);
   -ms-flex-preferred-size: calc(100% - 76px);
       flex-basis: calc(100% - 76px);
 }
 
-.footer__blogdesc h6 {
+.footer__bottomblogdesc h6 {
   margin-bottom: 0;
   font-size: 0.9rem;
 }
 
-.footer__blogdesc .date {
+.footer__bottomblogdesc .date {
   font-size: 0.7rem;
+}
+
+.footer__bottom .ourlocations {
+  text-transform: uppercase;
+}
+
+.footer__bottom .resources p {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: #000;
 }
 
 .footer__copyright {
@@ -1095,13 +1094,33 @@ label {
   padding: 1.7rem 0;
 }
 
-.footer__copyright a {
-  font-size: 16px;
-  color: #000;
-}
-
 .footer__copyright p, .footer__copyright ul {
   margin-bottom: 0;
+}
+
+.footer__copyright ul {
+  margin-left: 1rem;
+}
+
+.footer__copyright ul li a {
+  font-size: 0.9rem;
+  color: #000;
+  text-transform: uppercase;
+  padding: 0 0.5rem;
+  position: relative;
+}
+
+.footer__copyright ul li a::after {
+  content: "|";
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  line-height: normal;
+}
+
+.footer__copyright ul li:last-child a::after {
+  content: none;
 }
 
 [type=button]:not(:disabled),

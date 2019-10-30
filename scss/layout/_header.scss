@@ -9,9 +9,13 @@
         max-width: 90%;
         margin: 0 auto;
         @include flex_center_between;
+        overflow: hidden;
     }
     &__logo{
         img{
+            @include max-width-for(desktop-up) {
+                max-width: 250px;
+            }
             @include max-width-for(tablet){
                 max-width: 190px;
             }
@@ -47,19 +51,6 @@
                 top:12px;
                 content: none;
             }
-        }
-    }
-    .header-social-share{
-        background: $black;
-        width: 4.7rem;
-        padding: 2.2rem .8rem;
-        border-radius: 40px 0 0 40px;
-        text-align: center;
-        position: fixed;
-        right: 0;
-        top: 125px;
-        li{
-            margin: 1.2rem 0;
         }
     }
 }

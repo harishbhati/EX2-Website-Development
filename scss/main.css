@@ -434,7 +434,7 @@ body {
       flex-wrap: wrap !important;
 }
 
-.d-flex, .justify-content-center, .justify-content-between, .footer__bottom__socialicons, .footer__bottom__links {
+.d-flex, .justify-content-center, .justify-content-between {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -462,7 +462,7 @@ body {
           flex-direction: row;
 }
 
-.center-content, .footer__bottom__socialinfo {
+.center-content {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -544,6 +544,22 @@ section .heading-blue {
   .m-mb-2 {
     margin-bottom: 2rem;
   }
+}
+
+.header-social-share {
+  background: #000;
+  width: 4.7rem;
+  padding: 2.2rem .8rem;
+  border-radius: 40px 0 0 40px;
+  text-align: center;
+  position: fixed;
+  right: 0;
+  top: 125px;
+  z-index: 9999;
+}
+
+.header-social-share li {
+  margin: 1.2rem 0;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
@@ -647,6 +663,13 @@ label {
   padding: 1rem 1.1rem;
   letter-spacing: 0.45px;
   white-space: nowrap;
+}
+
+@media (max-width: 1366px) {
+  .nav-list__link {
+    font-size: 0.9rem;
+    padding: 1rem 0.7rem;
+  }
 }
 
 .nav-list__link:hover, .nav-list__link.active {
@@ -871,6 +894,13 @@ label {
   -ms-flex-pack: justify;
   -webkit-box-pack: justify;
           justify-content: space-between;
+  overflow: hidden;
+}
+
+@media (max-width: 1366px) {
+  .header__logo img {
+    max-width: 250px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -919,43 +949,9 @@ label {
   content: none;
 }
 
-.header .header-social-share {
-  background: #000;
-  width: 4.7rem;
-  padding: 2.2rem .8rem;
-  border-radius: 40px 0 0 40px;
-  text-align: center;
-  position: fixed;
-  right: 0;
-  top: 125px;
-}
-
-.header .header-social-share li {
-  margin: 1.2rem 0;
-}
-
-.footer img {
-  margin-bottom: 15px;
-}
-
-.footer ul {
-  list-style: none;
-  text-transform: uppercase;
-}
-
-.footer ul a {
-  padding: 0 7px;
-  position: relative;
-  color: #000;
-  font-size: 14px;
-  letter-spacing: -0.12px;
-}
-
 .footer__career {
   background: #ddd url("/assets/images/growing-team.jpg") no-repeat center;
   background-size: cover;
-  text-align: center;
-  padding: 4rem 0px;
   min-height: 650px;
 }
 
@@ -964,77 +960,167 @@ label {
 }
 
 .footer__top {
-  background-color: #1795d2;
-  text-align: center;
-  text-transform: capitalize;
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: flex;
-  -ms-flex-align: center;
-  -webkit-box-align: center;
-          align-items: center;
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
-          justify-content: center;
-  min-height: 120px;
+  background: #1d5ca9;
 }
 
-.footer__top h2 {
+.footer__top h2, .footer__top p {
   color: #fff;
-  margin-bottom: 0 !important;
+}
+
+.footer__top a {
+  color: #0ddba3;
+  text-transform: uppercase;
+  font-size: 24px;
+  border-bottom: 2px solid #0ddba3;
+}
+
+.footer__topimg {
+  background: url(../../assets/images/footerbg.jpeg) no-repeat center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.footer__topimg::after {
+  background-color: rgba(29, 92, 169, 0.5);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  z-index: -1;
 }
 
 .footer__bottom {
-  padding: 55px 0 80px;
+  padding: 0 0 2.5rem;
+  position: relative;
+  background-color: #e9edf0;
 }
 
-.footer__bottom__about p {
+.footer__bottom:before {
+  content: "";
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  background: #dce7ed;
+  top: 0;
+}
+
+.footer__bottominfo {
+  margin-top: 15px;
+}
+
+.footer__bottominfo p {
+  font-size: 0.85rem;
+}
+
+.footer__bottominfo h5 {
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+
+.footer__bottominfo img {
+  margin-left: -15px;
+}
+
+.footer__bottominfo ul a {
+  color: #000;
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
+  display: inline-block;
+}
+
+.footer__bottominfo .btn {
+  background-color: #000;
+  color: #fff;
+}
+
+.footer__bottomblog {
+  margin-bottom: 0.7rem;
+}
+
+.footer__bottomblogdm {
+  width: 65px;
+  height: 65px;
+  background: #000;
+  border-radius: 50px;
+  color: #fff;
+  text-align: center;
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__bottomblogdm span {
   line-height: normal;
-  font-size: 14px;
+  display: block;
 }
 
-.footer__bottom__socialinfo p {
+.footer__bottomblogdesc {
+  max-width: calc(100% - 76px);
+  -ms-flex-preferred-size: calc(100% - 76px);
+      flex-basis: calc(100% - 76px);
+}
+
+.footer__bottomblogdesc h6 {
   margin-bottom: 0;
+  font-size: 0.9rem;
 }
 
-.footer__bottom__socialicons {
+.footer__bottomblogdesc .date {
+  font-size: 0.7rem;
+}
+
+.footer__bottom .ourlocations {
+  text-transform: uppercase;
+}
+
+.footer__bottom .resources p {
+  font-size: 0.9rem;
+  text-transform: uppercase;
   color: #000;
 }
 
-.footer__bottom__socialicons li:first-child a {
-  padding-left: 0;
+.footer__copyright {
+  background-color: #fff;
+  padding: 1.7rem 0;
 }
 
-.footer__bottom__socialicons li a {
-  font-size: 45px;
-  padding: 0 16px;
+.footer__copyright p, .footer__copyright ul {
+  margin-bottom: 0;
 }
 
-.footer__bottom__links li:first-child a {
-  padding-left: 0;
+.footer__copyright ul {
+  margin-left: 1rem;
 }
 
-.footer__bottom__links li:last-child a::after {
-  content: none;
+.footer__copyright ul li a {
+  font-size: 0.9rem;
+  color: #000;
+  text-transform: uppercase;
+  padding: 0 0.5rem;
+  position: relative;
 }
 
-.footer__bottom__links a:after {
-  content: "";
+.footer__copyright ul li a::after {
+  content: "|";
+  display: inline-block;
   position: absolute;
-  width: 1px;
-  height: calc(100% - 2px);
-  background: #000;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
   right: 0;
+  top: 0;
+  line-height: normal;
 }
 
-.footer__bottom__digitext h2 {
-  font-family: "Lato-Regular";
-  color: #181517;
-  font-size: 37px;
-  letter-spacing: -0.37px;
+.footer__copyright ul li:last-child a::after {
+  content: none;
 }
 
 [type=button]:not(:disabled),

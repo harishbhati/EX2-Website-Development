@@ -7,7 +7,8 @@
 }
 .flexslider .slides>li {
     display: none;
-    -webkit-backface-visibility: hidden
+    -webkit-backface-visibility: hidden;
+    padding-left: 0;
 }
 
 .flexslider .slides img {

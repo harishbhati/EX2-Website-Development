@@ -117,11 +117,6 @@
         }
     }
     &__desc {
-        @media (max-width:1024px) and (orientation: portrait) {
-            max-width: 100%;
-            flex-basis: 100%;
-            order:2;
-        }
         &para {
             margin-bottom: 50px;
             p {
@@ -150,13 +145,6 @@
 
     &__imgblk {
         text-align: right;
-        @media (max-width:1024px) and (orientation: portrait) {
-            max-width: 100%;
-            flex-basis: 100%;
-            order:1;
-            text-align: center;
-            margin-bottom: 1rem;
-        }
     }
 }
 

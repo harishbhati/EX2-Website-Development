@@ -9,7 +9,6 @@
         max-width: 90%;
         margin: 0 auto;
         @include flex_center_between;
-        overflow: hidden;
     }
     &__logo{
         img{

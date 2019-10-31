@@ -368,7 +368,7 @@ button::-moz-focus-inner {
 }
 
 html {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
@@ -894,7 +894,6 @@ label {
   -ms-flex-pack: justify;
   -webkit-box-pack: justify;
           justify-content: space-between;
-  overflow: hidden;
 }
 
 @media (max-width: 1366px) {

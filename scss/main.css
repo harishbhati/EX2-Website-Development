@@ -1003,10 +1003,6 @@ label {
   margin-top: 15px;
 }
 
-.footer__bottominfo p {
-  font-size: 0.85rem;
-}
-
 .footer__bottominfo h5 {
   text-transform: uppercase;
   margin-bottom: 3rem;
@@ -1018,7 +1014,6 @@ label {
 
 .footer__bottominfo ul a {
   color: #000;
-  font-size: 0.9rem;
   margin-bottom: 0.4rem;
   display: inline-block;
 }
@@ -1076,7 +1071,6 @@ label {
 }
 
 .footer__bottom .resources p {
-  font-size: 0.9rem;
   text-transform: uppercase;
   color: #000;
 }
@@ -1095,7 +1089,6 @@ label {
 }
 
 .footer__copyright ul li a {
-  font-size: 0.9rem;
   color: #000;
   text-transform: uppercase;
   padding: 0 0.5rem;

@@ -29,11 +29,6 @@
         padding: 1rem 1.1rem;
         letter-spacing: 0.45px;
         white-space: nowrap;
-        @include max-width-for(desktop-up) {
-            font-size: 0.9rem;
-            padding: 1rem 0.7rem;
-        }
-
         &:hover,
         &.active {
             color: $primary;
@@ -47,7 +42,7 @@
         list-style: none;
         background: #fff;
         z-index: 2;
-        padding: 20px;
+        padding: 20px 15px;
         top: 100%;
         opacity: 0;
         visibility: hidden;

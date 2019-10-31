@@ -665,13 +665,6 @@ label {
   white-space: nowrap;
 }
 
-@media (max-width: 1366px) {
-  .nav-list__link {
-    font-size: 0.9rem;
-    padding: 1rem 0.7rem;
-  }
-}
-
 .nav-list__link:hover, .nav-list__link.active {
   color: #1795d2;
 }
@@ -685,7 +678,7 @@ label {
   list-style: none;
   background: #fff;
   z-index: 2;
-  padding: 20px;
+  padding: 20px 15px;
   top: 100%;
   opacity: 0;
   visibility: hidden;

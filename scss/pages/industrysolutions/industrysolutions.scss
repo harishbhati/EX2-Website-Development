@@ -78,16 +78,12 @@
         justify-content: center;
       }
       .squares_item {
-        width: 11.1rem;
-        height: 11.1rem;
-        padding: 2.25rem 0 2.25rem 1.66rem;
-        text-align: left;
+        height: 14.5rem;
+        padding: 2rem;
         color: #fff;
-        > div {
-          img {
-            height: 50px;
-            width: 50px;
-          }
+        flex: 1 0 21%;
+        span {
+          font-size: 4rem;
         }
         &:nth-child(1) {
           background-color: #1b8ccc;
@@ -114,7 +110,6 @@
           background-color: #0b79bc;
         }
         > h6 {
-          max-width: 80%;
           margin: 0;
           margin-top: auto;
         }
@@ -162,6 +157,9 @@
           width: 150px;
           height: 150px;
           background: #1b8ccc;
+          span{
+            font-size: 4.5rem;
+          }
         }
       }
     }
@@ -219,7 +217,7 @@
         }
         .inner-div {
           margin: 0;
-          min-width: 205px;
+          min-width: 160px;
           width: 100%;
           color: #fff;
           position: relative;
@@ -257,7 +255,7 @@
         }
         div:nth-child(2) {
           .hexagone {
-            background-color: #050708;
+            background-color: #ccc;
             height: 175px;
             width: calc(175px * 0.57735);
             @include max-width-for(phone) {

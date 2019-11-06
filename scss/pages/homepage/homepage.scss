@@ -47,7 +47,7 @@
         }
     }
     &__figimg {
-        min-height: 200px;
+        margin-bottom: 2rem;
         align-items: center;
         display: flex;
         img {
@@ -133,8 +133,7 @@
         }
 
         &img {
-            min-height: 130px;
-            margin-bottom: 30px;
+            margin-bottom: 2rem;
             display: flex;  
             align-items: center;
             justify-content: center;

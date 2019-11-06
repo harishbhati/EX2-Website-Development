@@ -160,16 +160,31 @@ button::-moz-focus-inner {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  position: absolute;
+  position: relative;
   z-index: 1;
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-artificial-intelligence {
+.icon-artificial-intelligence, .icon-machine-learning, .icon-data-extraction {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
+}
+
+.icon-facebook:before {
+  content: "\e90e";
+  color: #fff;
+}
+
+.icon-linkedin:before {
+  content: "\e915";
+  color: #fff;
+}
+
+.icon-twitter:before {
+  content: "\e91f";
+  color: #fff;
 }
 
 .icon-arrow_bottom:before {
@@ -190,180 +205,120 @@ button::-moz-focus-inner {
   content: "\e903";
 }
 
-.icon-cloud-teaching .path1:before {
+.icon-cloud-teaching:before {
   content: "\e904";
-  color: white;
-}
-
-.icon-cloud-teaching .path2:before {
-  content: "\e905";
-  margin-left: -1em;
-  color: #0674b9;
-}
-
-.icon-cloud-teaching .path3:before {
-  content: "\e906";
-  margin-left: -1em;
-  color: #0674b9;
-}
-
-.icon-cloud-teaching .path4:before {
-  content: "\e907";
-  margin-left: -1em;
-  color: #0674b9;
-}
-
-.icon-cloud-teaching .path5:before {
-  content: "\e908";
-  margin-left: -1em;
-  color: #0674b9;
-}
-
-.icon-cloud-teaching .path6:before {
-  content: "\e909";
-  margin-left: -1em;
-  color: #0674b9;
-}
-
-.icon-cloud-teaching .path7:before {
-  content: "\e90a";
-  margin-left: -1em;
-  color: #0674b9;
-}
-
-.icon-cloud-teaching .path8:before {
-  content: "\e90b";
-  margin-left: -1em;
   color: #0674b9;
 }
 
 .icon-consulting-needs-assessment:before {
-  content: "\e90c";
+  content: "\e905";
   color: #fff;
 }
 
 .icon-creative-technical-excellence:before {
-  content: "\e90d";
+  content: "\e906";
 }
 
 .icon-CRM-system-implementations:before {
-  content: "\e90e";
+  content: "\e907";
   color: #fff;
 }
 
 .icon-CRM-system-migrations:before {
-  content: "\e90f";
+  content: "\e908";
   color: #fff;
 }
 
 .icon-customer-engagement:before {
-  content: "\e910";
+  content: "\e909";
 }
 
 .icon-customer-experience:before {
-  content: "\e911";
+  content: "\e90a";
 }
 
 .icon-customer-insight:before {
-  content: "\e912";
+  content: "\e90b";
   color: #fff;
 }
 
 .icon-customer-service:before {
-  content: "\e913";
+  content: "\e90c";
   color: #fff;
 }
 
 .icon-data-extraction:before {
-  content: "\e914";
+  content: "\e90d";
   color: #fff;
 }
 
 .icon-field-service:before {
-  content: "\e915";
+  content: "\e90f";
   color: #fff;
 }
 
 .icon-financials:before {
-  content: "\e916";
+  content: "\e910";
   color: #fff;
 }
 
 .icon-hand-select:before {
-  content: "\e917";
+  content: "\e911";
 }
 
-.icon-heart-icon .path1:before {
-  content: "\e918";
-  color: white;
-}
-
-.icon-heart-icon .path2:before {
-  content: "\e919";
-  margin-left: -1em;
+.icon-heart-icon:before {
+  content: "\e912";
   color: #0674b9;
 }
 
 .icon-highly-functional:before {
-  content: "\e91a";
+  content: "\e913";
 }
 
 .icon-innovative-business-growth:before {
-  content: "\e91b";
+  content: "\e914";
 }
 
 .icon-machine-learning:before {
-  content: "\e91c";
+  content: "\e916";
   color: #fff;
 }
 
 .icon-marketing:before {
-  content: "\e91d";
+  content: "\e917";
   color: #fff;
 }
 
 .icon-operations:before {
-  content: "\e91e";
+  content: "\e918";
   color: #fff;
 }
 
 .icon-pencil-pc:before {
-  content: "\e91f";
+  content: "\e919";
 }
 
 .icon-project-automation:before {
-  content: "\e920";
+  content: "\e91a";
   color: #fff;
 }
 
 .icon-sales:before {
-  content: "\e921";
+  content: "\e91b";
   color: #fff;
 }
 
 .icon-sync-devices:before {
-  content: "\e922";
+  content: "\e91c";
 }
 
 .icon-system-data-integrations:before {
-  content: "\e923";
+  content: "\e91d";
   color: #fff;
 }
 
-.icon-target .path1:before {
-  content: "\e924";
-  color: white;
-}
-
-.icon-target .path2:before {
-  content: "\e925";
-  margin-left: -1em;
-  color: #0674b9;
-}
-
-.icon-target .path3:before {
-  content: "\e926";
-  margin-left: -1em;
+.icon-target:before {
+  content: "\e91e";
   color: #0674b9;
 }
 
@@ -506,7 +461,7 @@ body {
 
 section .heading-dotbg {
   background: url(../../../assets/images/datascience/dot-bg.png) no-repeat center;
-  background-size: auto;
+  background-size: 10rem;
   background-position: top left 15px;
   padding-top: 2rem;
   padding-left: 2rem;
@@ -514,7 +469,7 @@ section .heading-dotbg {
 
 @media (max-width: 767px) {
   section .heading-dotbg {
-    background-size: 10rem;
+    background-size: 8rem;
   }
 }
 
@@ -562,6 +517,35 @@ section .heading-blue {
   margin: 1.2rem 0;
 }
 
+.header-social-share span {
+  font-size: 3.4rem;
+}
+
+#back-to-top {
+  height: 3rem;
+  width: 3rem;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  z-index: 99;
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+  color: #1795d2;
+  background-color: #fff;
+  border: 1px solid #1795d2;
+  font-size: 2rem;
+  overflow: hidden;
+  border-radius: 4px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   font-family: "Lato-Semibold";
   line-height: 1.2;
@@ -582,11 +566,11 @@ section .heading-blue {
 }
 
 .h4, h4 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .h5, h5 {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: 400;
 }
 
@@ -872,7 +856,7 @@ label {
   -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.22);
           box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.22);
   padding: 1.6rem 0;
-  z-index: 1;
+  z-index: 2;
 }
 
 .header__container {

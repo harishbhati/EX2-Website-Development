@@ -85,18 +85,29 @@ font-weight: normal;
 font-variant: normal;
 text-transform: none;
 line-height: 1;
-position: absolute;
+position: relative;
 z-index: 1;
 
 /* Better Font Rendering =========== */
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
 }
-.icon-artificial-intelligence{
+.icon-artificial-intelligence,.icon-machine-learning,.icon-data-extraction{
 
     transform: rotate(-90deg);
-}
-.icon-arrow_bottom:before {
+}.icon-facebook:before {
+    content: "\e90e";
+    color: #fff;
+  }
+  .icon-linkedin:before {
+    content: "\e915";
+    color: #fff;
+  }
+  .icon-twitter:before {
+    content: "\e91f";
+    color: #fff;
+  }
+  .icon-arrow_bottom:before {
     content: "\e900";
     color: #205da8;
   }
@@ -110,146 +121,96 @@ z-index: 1;
   .icon-business-scaling:before {
     content: "\e903";
   }
-  .icon-cloud-teaching .path1:before {
+  .icon-cloud-teaching:before {
     content: "\e904";
-    color: rgb(255, 255, 255);
-  }
-  .icon-cloud-teaching .path2:before {
-    content: "\e905";
-    margin-left: -1em;
-    color: rgb(6, 116, 185);
-  }
-  .icon-cloud-teaching .path3:before {
-    content: "\e906";
-    margin-left: -1em;
-    color: rgb(6, 116, 185);
-  }
-  .icon-cloud-teaching .path4:before {
-    content: "\e907";
-    margin-left: -1em;
-    color: rgb(6, 116, 185);
-  }
-  .icon-cloud-teaching .path5:before {
-    content: "\e908";
-    margin-left: -1em;
-    color: rgb(6, 116, 185);
-  }
-  .icon-cloud-teaching .path6:before {
-    content: "\e909";
-    margin-left: -1em;
-    color: rgb(6, 116, 185);
-  }
-  .icon-cloud-teaching .path7:before {
-    content: "\e90a";
-    margin-left: -1em;
-    color: rgb(6, 116, 185);
-  }
-  .icon-cloud-teaching .path8:before {
-    content: "\e90b";
-    margin-left: -1em;
-    color: rgb(6, 116, 185);
+    color: #0674b9;
   }
   .icon-consulting-needs-assessment:before {
-    content: "\e90c";
+    content: "\e905";
     color: #fff;
   }
   .icon-creative-technical-excellence:before {
-    content: "\e90d";
+    content: "\e906";
   }
   .icon-CRM-system-implementations:before {
-    content: "\e90e";
+    content: "\e907";
     color: #fff;
   }
   .icon-CRM-system-migrations:before {
-    content: "\e90f";
+    content: "\e908";
     color: #fff;
   }
   .icon-customer-engagement:before {
-    content: "\e910";
+    content: "\e909";
   }
   .icon-customer-experience:before {
-    content: "\e911";
+    content: "\e90a";
   }
   .icon-customer-insight:before {
-    content: "\e912";
+    content: "\e90b";
     color: #fff;
   }
   .icon-customer-service:before {
-    content: "\e913";
+    content: "\e90c";
     color: #fff;
   }
   .icon-data-extraction:before {
-    content: "\e914";
+    content: "\e90d";
     color: #fff;
   }
   .icon-field-service:before {
-    content: "\e915";
+    content: "\e90f";
     color: #fff;
   }
   .icon-financials:before {
-    content: "\e916";
+    content: "\e910";
     color: #fff;
   }
   .icon-hand-select:before {
-    content: "\e917";
+    content: "\e911";
   }
-  .icon-heart-icon .path1:before {
-    content: "\e918";
-    color: rgb(255, 255, 255);
-  }
-  .icon-heart-icon .path2:before {
-    content: "\e919";
-    margin-left: -1em;
-    color: rgb(6, 116, 185);
+  .icon-heart-icon:before {
+    content: "\e912";
+    color: #0674b9;
   }
   .icon-highly-functional:before {
-    content: "\e91a";
+    content: "\e913";
   }
   .icon-innovative-business-growth:before {
-    content: "\e91b";
+    content: "\e914";
   }
   .icon-machine-learning:before {
-    content: "\e91c";
+    content: "\e916";
     color: #fff;
   }
   .icon-marketing:before {
-    content: "\e91d";
+    content: "\e917";
     color: #fff;
   }
   .icon-operations:before {
-    content: "\e91e";
+    content: "\e918";
     color: #fff;
   }
   .icon-pencil-pc:before {
-    content: "\e91f";
+    content: "\e919";
   }
   .icon-project-automation:before {
-    content: "\e920";
+    content: "\e91a";
     color: #fff;
   }
   .icon-sales:before {
-    content: "\e921";
+    content: "\e91b";
     color: #fff;
   }
   .icon-sync-devices:before {
-    content: "\e922";
+    content: "\e91c";
   }
   .icon-system-data-integrations:before {
-    content: "\e923";
+    content: "\e91d";
     color: #fff;
   }
-  .icon-target .path1:before {
-    content: "\e924";
-    color: rgb(255, 255, 255);
-  }
-  .icon-target .path2:before {
-    content: "\e925";
-    margin-left: -1em;
-    color: rgb(6, 116, 185);
-  }
-  .icon-target .path3:before {
-    content: "\e926";
-    margin-left: -1em;
-    color: rgb(6, 116, 185);
+  .icon-target:before {
+    content: "\e91e";
+    color: #0674b9;
   }
   

@@ -84,12 +84,12 @@ body {
 section{
     .heading-dotbg{
         background: url(../../../assets/images/datascience/dot-bg.png) no-repeat center;
-        background-size: auto;
+        background-size: 10rem;
         background-position: top left 15px;
         padding-top: 2rem;
         padding-left: 2rem;
         @include max-width-for(phone){
-            background-size: 10rem;
+            background-size: 8rem;
         }
     }
     .heading-blue{
@@ -134,4 +134,27 @@ section{
     li{
         margin: 1.2rem 0;
     }
+    span{
+        font-size: 3.4rem;
+    }
+}
+//Back to top
+#back-to-top{
+    height: 3rem;
+    width: 3rem;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 99;
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+    color:#1795d2;
+    background-color: #fff;
+    border: 1px solid #1795d2;
+    font-size: 2rem;
+    overflow: hidden;
+    border-radius: 4px;
+    transform: rotate(-90deg);  
 }

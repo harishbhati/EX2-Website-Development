@@ -1,9 +1,6 @@
 @import "../../base/variables";
 @import "../../base/mixins";
 .contact-form {
-  p {
-    font-size: 20px;
-  }
   @include max-width-for(phone){
   .action-btn{
     text-align: center;
@@ -103,7 +100,7 @@ h5{
   }
   address{
     font-style: normal;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-family: $lato-regular;
     @include max-width-for(phone){
       margin-bottom: 30px;

@@ -329,18 +329,6 @@ html {
   -webkit-tap-highlight-color: transparent;
 }
 
-@media (max-width: 767px) {
-  html {
-    font-size: 15px;
-  }
-}
-
-@media (max-width: 359px) {
-  html {
-    font-size: 12px;
-  }
-}
-
 body {
   font-size: 1rem;
   font-weight: 400;
@@ -513,12 +501,30 @@ section .heading-blue {
   z-index: 3;
 }
 
+@media (max-width: 767px) {
+  .header-social-share {
+    visibility: hidden;
+  }
+}
+
 .header-social-share li {
   margin: 1.2rem 0;
 }
 
 .header-social-share span {
   font-size: 3.4rem;
+}
+
+.ismobile {
+  overflow: hidden;
+}
+
+.ismobile .header-social-share {
+  visibility: visible;
+}
+
+.ismobile .header-social-share span {
+  font-size: 2.6rem;
 }
 
 #back-to-top {
@@ -553,7 +559,7 @@ section .heading-blue {
 }
 
 .h1, h1 {
-  font-size: 2.5rem;
+  font-size: 2.7rem;
 }
 
 .h2, h2 {
@@ -713,7 +719,7 @@ label {
     height: 100%;
     top: 0;
     left: 0;
-    z-index: 9;
+    z-index: 2;
   }
   nav .nav-list {
     display: block;

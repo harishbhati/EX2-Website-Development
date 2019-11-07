@@ -5,12 +5,6 @@ html {
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
-    @include max-width-for(phone){
-        font-size: 15px; 
-    }
-    @include max-width-for(smallPhone){
-        font-size: 12px; 
-    }
 }
 body {
     font-size: 1rem;
@@ -131,12 +125,24 @@ section{
     right: 0;
     top: 125px;
     z-index: 3;
+    @include max-width-for(phone){
+        visibility: hidden;
+    }
     li{
         margin: 1.2rem 0;
     }
     span{
         font-size: 3.4rem;
     }
+}
+.ismobile{
+    overflow: hidden;
+    .header-social-share{
+        visibility: visible;
+        span{
+            font-size: 2.6rem;
+        }
+    } 
 }
 //Back to top
 #back-to-top{

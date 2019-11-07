@@ -167,11 +167,6 @@ button::-moz-focus-inner {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-artificial-intelligence, .icon-machine-learning, .icon-data-extraction {
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-}
-
 .icon-facebook:before {
   content: "\e90e";
   color: #fff;
@@ -504,11 +499,21 @@ section .heading-blue {
 @media (max-width: 767px) {
   .header-social-share {
     visibility: hidden;
+    width: 3.3rem;
+    padding: 1rem .8rem;
+    border-radius: 25px 0 0 25px;
+    top: 110px;
   }
 }
 
 .header-social-share li {
   margin: 1.2rem 0;
+}
+
+@media (max-width: 767px) {
+  .header-social-share li {
+    margin: .8rem 0;
+  }
 }
 
 .header-social-share span {
@@ -957,8 +962,6 @@ label {
 }
 
 .footer__topimg {
-  background: url(../../assets/images/footerbg.jpeg) no-repeat center;
-  background-size: cover;
   position: relative;
   z-index: 1;
 }

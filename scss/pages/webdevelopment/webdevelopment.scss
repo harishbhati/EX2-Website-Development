@@ -1,10 +1,13 @@
 @import "../../base/variables";
+@import "../../base/mixins";
 .development-worried{
     background: #ddd url(../../../assets/images/webdevelopment/worried-bg.jpg) no-repeat center;
     background-size: cover;
     text-align: center;
-    padding: 140px 0px;
-    min-height: 300px;
+    padding: 10rem 0px;
+    @include max-width-for(phone){
+        padding: 4rem 3rem;
+    }
     h2{
         color: $white;
     }

@@ -31,7 +31,10 @@
         }
     }
     .main-dis{
-        margin: 0 0 3rem;
+        margin: 0 0 4rem;
+        @include for-size(tablet){
+            padding: 0 12rem;
+        }
     }
     &__fig{
         @include max-width-for(tablet) {

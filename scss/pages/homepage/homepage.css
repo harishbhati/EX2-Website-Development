@@ -29,7 +29,13 @@
 }
 
 .home-whowe .main-dis {
-  margin: 0 0 3rem;
+  margin: 0 0 4rem;
+}
+
+@media (min-width: 768px) {
+  .home-whowe .main-dis {
+    padding: 0 12rem;
+  }
 }
 
 @media (max-width: 1024px) {

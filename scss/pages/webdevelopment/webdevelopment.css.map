@@ -1,9 +1,10 @@
 {
     "version": 3,
-    "mappings": "AACA,AAAA,oBAAoB,CAAA;EAChB,UAAU,EAAE,IAAI,CAAC,yDAAyD,CAAC,SAAS,CAAC,MAAM;EAC3F,eAAe,EAAE,KAAK;EACtB,UAAU,EAAE,MAAM;EAClB,OAAO,EAAE,SAAS;EAClB,UAAU,EAAE,KAAK;CAIpB;;AATD,AAMI,oBANgB,CAMhB,EAAE,CAAA;EACE,KAAK,ECJL,IAAI;CDKP",
+    "mappings": "AAEA,AAAA,oBAAoB,CAAA;EAChB,UAAU,EAAE,IAAI,CAAC,yDAAyD,CAAC,SAAS,CAAC,MAAM;EAC3F,eAAe,EAAE,KAAK;EACtB,UAAU,EAAE,MAAM;EAClB,OAAO,EAAE,SAAS;CAOrB;;AEyMO,MAAM,EAAE,SAAS,EAAE,KAAK;EFpNhC,AAAA,oBAAoB,CAAA;IAMZ,OAAO,EAAE,SAAS;GAKzB;;;AAXD,AAQI,oBARgB,CAQhB,EAAE,CAAA;EACE,KAAK,ECPL,IAAI;CDQP",
     "sources": [
         "webdevelopment.scss",
-        "../../base/_variables.scss"
+        "../../base/_variables.scss",
+        "../../base/_mixins.scss"
     ],
     "names": [],
     "file": "webdevelopment.css"

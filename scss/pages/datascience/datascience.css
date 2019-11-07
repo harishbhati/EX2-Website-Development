@@ -23,40 +23,54 @@
 }
 
 .hexagone {
-  height: 230px;
-  width: calc(230px * 0.57735);
-  background: #27aae1;
+  width: 230px;
+  height: 132px;
+  background-color: #27aae1;
+  border-color: #27aae1;
   position: relative;
-  margin: 0 auto;
-  transform: rotate(90deg);
-  -webkit-transform: rotate(90deg);
+  margin: 60px auto;
 }
 
 .hexagone:before, .hexagone:after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 115px solid transparent;
+  border-right: 115px solid transparent;
   position: absolute;
-  top: 0;
-  right: calc((100% / 2) - ((230px * 0.57735) / 2));
-  background-color: inherit;
-  height: inherit;
-  width: inherit;
-  content: "";
+  left: 0;
 }
 
 .hexagone:before {
-  transform: rotateZ(-60deg);
-  -webkit-transform: rotateZ(-60deg);
+  top: -66px;
+  border-bottom: 66px solid #27aae1;
 }
 
 .hexagone:after {
-  transform: rotateZ(60deg);
-  -webkit-transform: rotateZ(60deg);
+  bottom: -66px;
+  border-top: 66px solid #27aae1;
 }
 
-.hexagone .inner-div {
-  position: relative;
-  z-index: 1;
-  transform: rotate(-90deg);
-  -webkit-transform: rotate(-90deg);
+@media (max-width: 767px) {
+  .hexagone {
+    width: 100px;
+    height: 60px;
+  }
+  .hexagone span {
+    font-size: 4rem;
+  }
+  .hexagone:before, .hexagone:after {
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+  }
+  .hexagone:before {
+    top: -30px;
+    border-bottom: 30px solid #27aae1;
+  }
+  .hexagone:after {
+    bottom: -30px;
+    border-top: 30px solid #27aae1;
+  }
 }
 
 .what-next h2 {
@@ -85,16 +99,7 @@
   }
 }
 
-.what-next .bottom-align .hexagone {
-  margin-top: 26px;
-  margin-bottom: 0;
-}
-
 .what-next__dis {
   padding-top: 20px;
-}
-
-.hexagone {
-  margin-bottom: 38px;
 }
 /*# sourceMappingURL=datascience.css.map */

@@ -19,36 +19,49 @@
     }
 }
 .hexagone {
-    height: 230px;
-    width: calc(230px * 0.57735);
-    background: #27aae1;
+    width: 230px;
+    height: 132px;
+    background-color: #27aae1;
+    border-color: #27aae1;
     position: relative;
-    margin: 0 auto;
-    transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
+    margin: 60px auto;
     &:before,
     &:after {
-      position: absolute;
-      top: 0;
-      right: calc((100% / 2) - ((230px * 0.57735) / 2));
-      background-color: inherit;
-      height: inherit;
-      width: inherit;
-      content: "";
+        content: '';
+        width: 0;
+        height: 0;
+        border-left: 115px solid transparent;
+        border-right: 115px solid transparent;
+        position: absolute;
+        left: 0;
     }
     &:before {
-      transform: rotateZ(-60deg);
-      -webkit-transform: rotateZ(-60deg);
+        top: -66px;
+        border-bottom: 66px solid #27aae1;
     }
     &:after {
-      transform: rotateZ(60deg);
-      -webkit-transform: rotateZ(60deg);
+        bottom: -66px;
+        border-top: 66px solid #27aae1;
     }
-    .inner-div{
-        position: relative;
-        z-index: 1;
-        transform: rotate(-90deg);
-        -webkit-transform: rotate(-90deg);
+    @include max-width-for(phone){
+        width: 100px;
+        height: 60px;
+        span{
+            font-size: 4rem;
+        }
+        &:before,
+        &:after { 
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+        }
+        &:before {
+            top: -30px;
+            border-bottom: 30px solid #27aae1;
+        }
+        &:after {
+            bottom: -30px;
+            border-top: 30px solid #27aae1;
+        }
     }
 }
 .what-next{
@@ -62,15 +75,8 @@
         @include max-width-for(phone){
             flex-direction: column;
         }
-        .hexagone{
-            margin-top: 26px;
-            margin-bottom: 0;;
-        }
     }
     &__dis{
         padding-top: 20px;
     }
-}
-.hexagone{
-    margin-bottom: 38px;
 }

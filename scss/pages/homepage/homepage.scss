@@ -40,6 +40,7 @@
         @include max-width-for(tablet) {
             max-width: 50%;
             flex-basis: 50%;
+            margin-bottom: 1.5rem;
         }
         @include max-width-for(phone) {
             max-width: 100%;

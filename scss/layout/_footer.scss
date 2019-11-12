@@ -47,6 +47,10 @@
         }
         &info {
             margin-top:15px;
+            @include max-width-for(tablet) {
+                max-width: 33.33%;
+                flex-basis: 33.33%;
+            }
             h5 {
                 text-transform: uppercase;
                 margin-bottom: 3rem;

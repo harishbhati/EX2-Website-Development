@@ -2,6 +2,9 @@
   .work {
     text-align: center;
   }
+  .work h1 {
+    margin-bottom: 0;
+  }
 }
 
 .work__main-title {
@@ -67,5 +70,13 @@
 
 .work-with-us__banner {
   color: #fff;
+}
+
+@media (max-width: 767px) {
+  section .heading-dotbg {
+    padding-top: 0;
+    padding-left: 15px;
+    margin-bottom: 1.5rem;
+  }
 }
 /*# sourceMappingURL=work.css.map */

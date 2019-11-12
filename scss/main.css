@@ -996,6 +996,14 @@ label {
   margin-top: 15px;
 }
 
+@media (max-width: 1024px) {
+  .footer__bottominfo {
+    max-width: 33.33%;
+    -ms-flex-preferred-size: 33.33%;
+        flex-basis: 33.33%;
+  }
+}
+
 .footer__bottominfo h5 {
   text-transform: uppercase;
   margin-bottom: 3rem;

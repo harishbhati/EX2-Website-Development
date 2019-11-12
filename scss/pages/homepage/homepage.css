@@ -43,6 +43,7 @@
     max-width: 50%;
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
+    margin-bottom: 1.5rem;
   }
 }
 

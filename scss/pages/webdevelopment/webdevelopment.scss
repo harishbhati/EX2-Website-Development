@@ -5,6 +5,18 @@
     background-size: cover;
     text-align: center;
     padding: 10rem 0px;
+    position: relative;
+    z-index: 1;
+    &:before{
+        content: '';
+        background: rgba(22, 68, 125,.6);
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
     @include max-width-for(phone){
         padding: 4rem 3rem;
     }

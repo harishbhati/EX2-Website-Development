@@ -92,7 +92,18 @@
 
 .home-whatwedo__card__img {
   position: relative;
-  max-width: 385px;
+  width: 385px;
+  height: 285px;
+}
+
+.home-whatwedo__card__img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .home-whatwedo__card__img__info {

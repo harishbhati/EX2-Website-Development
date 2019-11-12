@@ -45,10 +45,22 @@
     }
 }
 .work-with-us {
-    background-image: url(/assets/images/work/work-wwu.png);
+    background: #ddd url(../../../assets/images/webdevelopment/worried-bg.jpg) no-repeat center;
     background-size: cover; 
-    padding-top: 150px;
-    padding-bottom: 100px;
+    padding-top: 130px;
+    padding-bottom: 130px;
+    position: relative;
+    z-index: 1;
+    &:before {
+        content: '';
+        background: rgba(22, 68, 125, 0.6);
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
     &__banner{
         color: $white;
     }

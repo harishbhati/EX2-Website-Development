@@ -3,6 +3,19 @@
   background-size: cover;
   text-align: center;
   padding: 10rem 0px;
+  position: relative;
+  z-index: 1;
+}
+
+.development-worried:before {
+  content: '';
+  background: rgba(22, 68, 125, 0.6);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 @media (max-width: 767px) {
